@@ -14,7 +14,7 @@ Each release has build date as its name.
 ## Build Yourself
 
 1. [Texlive](https://tug.org/texlive/) or any other tex distributions.
-   Also you can use [my dotfiles](https://github.com/1995parham/dotfiles) to install texlive.
+   Also you can use [1995parham's dotfiles](https://github.com/1995parham/dotfiles) to install texlive.
 
 ```sh
 ./start.sh texlive
