@@ -23,7 +23,7 @@ Each release has build date as its name.
 2. Install requirements
 
 ```sh
-sudo tlmgr install moderncv academicons fontawesome multirow arydshln roboto xifthen ifmtarg sourcesanspro tcolorbox environ enumitem
+sudo tlmgr install moderncv academicons fontawesome multirow arydshln roboto xifthen ifmtarg sourcesanspro tcolorbox environ enumitem tikzfill
 ```
 
 3. Make the resume!
