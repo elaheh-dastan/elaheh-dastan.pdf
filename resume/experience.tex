@@ -12,7 +12,7 @@
   \cventry
     {Intern} % Job title
     {Dotin} % Organization
-    {No. 33, East Nahid, Nelson Mandela (Africa) Blvd., Tehran, Iran} % Location
+    {Tehran, Iran} % Location
     {Jul 2019 - Sep 2019} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
@@ -24,7 +24,7 @@
   \cventry
     {Intern} % Job title
     {Alibaba Acedemy} % Organization
-    {No. 1, Golha, 4th Bimeh, Ekbatan, Tehran, Iran} % Location
+    {Tehran, Iran} % Location
     {Dec 2019 - Feb 2020} % Date(s)
     {
       \begin{cvitems} % Description(s) of tasks/responsibilities
@@ -39,38 +39,41 @@
   \cventry
     {Backend Developer} % Job title
     {Snapp!} % Organization
-    {No. 1, Saeedi, Valiasr, Tehran, Iran} % Location
+    {Tehran, Iran} % Location
     {Aguest 2020 - September 2021} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Design and Write Software with Go}
-        \item {Deploy Applications on Kubernetes}
-        \item {Design Systems Architecture}
-        \item {Worked with Helm and ArgoCD}
-        \item {Worked with Red Hat OpenShift Service on AWS}
-        \item {Worked with Postgres and MySQL}
-        \item {Worked with Redis}
-        \item {Worked with Apache Airflow}
-      \end{cvitems}
+      I work with Golang services related to user management and authentication on the User vertical.
+      We design a system for number masking works with multiple sides for ride and deploy it on virtual machines.
+      Then we migrate our services to Kubernetes on-promise cloud using Helm charts and ArgoCD.
+      We used ArgoCD application list to automatically generate argo application for our services and then
+      we create GitOps pipeline for managing configuration and secrets in Git with their history available.
+      I designed a system for automating the driver sigup process which reduce our registeration time and increased
+      the number of registered drivers.
     }
 
 %---------------------------------------------------------
   \cventry
     {ML Engineer} % Job title
     {Snapp!} % Organization
-    {No. 1, Saeedi, Valiasr, Tehran, Iran} % Location
+    {Tehran, Iran} % Location
     {September 2021 - now} % Date(s)
     {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item {Analyse big data using statistics and linear algebra}
-        \item {Coded in python and use libraries like pandas, numpy and sklearn}
-        \item {Worked with data processing frameworks like Spark}
-        \item {Worked with Cassandra and designed tables}
-        \item {Coded in Scala}
-        \item {Coded in pytorch/pytorch lightening and keras}
-        \item {Used visualization tools like tensorboad}
-        \item {Worked with ML platforms like MLflow}
-      \end{cvitems}
+      I first started by reviewing and re-desiging the current data pipline to improve its performace.
+      I replaced old spark-based solution with Golang to handle 40K driver locations per second instead of
+      8K per second. Upgrade cassandra cluster to hanlde new load and used Apache beam over Spark so we can
+      have tests for our pipeline stages. Then I start working on our first ETA-predication service by gathering data
+      from our new data pipeline, cleaning them and training models. I engineered features and detect the ones that can
+      be useful and droped the useless features because we cannot use that huge data in memory for trainign our model.
+      Then I shared the model so we can have smaller models that can be served on Kubernetes.
+      After our first successful result, I owned the project and have meeting with the product team for desiging
+      the project roadmap. I planned our first production release and did all pipeline by myself.
+      One the cirtical steps for doing the production release is processing the huge amount of data and for that I
+      start managing our ML server and create different environment with different quota for our data scients teams.
+
+      During the time that I redesigning the pipeline, I mentored our interns on the pipeline stages, so we can maintain
+      them after finishing the redesign without any problem.
+
+      Also, I did interviews beside the development for hiring software engineers and data scientists.
     }
 
 \end{cventries}
