@@ -58,21 +58,30 @@
     {Tehran, Iran} % Location
     {September 2021 - now} % Date(s)
     {
-      I first started by reviewing and re-desiging the current data pipline to improve its performace.
-      I replaced old spark-based solution with Golang to handle 40K driver locations per second instead of
-      8K per second. Upgrade cassandra cluster to hanlde new load and used Apache beam over Spark so we can
-      have tests for our pipeline stages. Then I start working on our first ETA-predication service by gathering data
-      from our new data pipeline, cleaning them and training models. I engineered features and detect the ones that can
-      be useful and droped the useless features because we cannot use that huge data in memory for trainign our model.
-      Then I shared the model so we can have smaller models that can be served on Kubernetes.
-      After our first successful result, I owned the project and have meeting with the product team for desiging
-      the project roadmap. I planned our first production release and did all pipeline by myself.
-      One the cirtical steps for doing the production release is processing the huge amount of data and for that I
-      start managing our ML server and create different environment with different quota for our data scients teams.
-      For lunching our models on production I add telemeteries (metrics, tracing and logs) into them (using python and go).
-      During the time that I redesigning the pipeline, I mentored our interns on the pipeline stages, so we can maintain
-      them after finishing the redesign without any problem.
-      Also, I did interviews beside the development for hiring software engineers and data scientists.
+      \begin{cvitems} % Description(s) of tasks/responsibilities
+        \item The goal of the team is to give accurate, scalable and fast ETA (estimated time of arrival)
+        \item Used matrix factorization techniques like ALS to recommend speed for streets we don't have sufficient data for and fed it to routing engines, it improved our coverage from one million shard streets to 3 millions
+        \item Developed and deployed a benchmarking service with Golang to benchmark our routing engines and models and report the results online in Grafana dashboards. This service benchmarks around 90,000 rides per day
+        \item Trained a regression model to improve routing engine ETA by 2\% on MAE metric
+        \item Gathered data from different sources like company central Clickhouse and other teams' databases, discussed with product managers and other teams to understand the data well. Created a data gathering pipeline and ran it periodically using Airflow. Collected over 30 million rides for 2 months
+        \item Cleaned the data using our knowledge form the data and columns declaring confidence on the rides' ATA (Actual Time of Arrival) also used outlier removal algorithms like isolation forest to remove outliers. It reduced our data to 1/2.
+        \item Did feature engineering on the data for example using time as a cyclic feature, adding extra features like Haversine distance, adding an understanding of traffic behavior to feature vector, discretizing geometric features for some model and etc. . Extended our feature vector size from 4 to 11.
+        \item Did EDA on data and sharded our dataset to 4 smaller shards, we had to train a model for each shard but could reduce models' size and increase their accuracy
+        \item Trained and tested more than 5 different models like Random Forests and Fully Connected Neural Networks. Used Keras Tuner to find best structure for NN models
+        \item Developed a complete pipeline to train NN models with different structures using Tensorflow. It outputs results on metrics we found cooperatively with product and commercial like R2 and negative error share. It saves the model, its Tensorboard information and etc. .
+        \item Deployed NN models using Tensorflow server and and Random Forest models using Fast API on Kubernetes. 
+        \item Included preprocessing layers in the NN model to avoid needing any middleware for data preprocessing
+        \item Load tested models using K6. The NN model's p90 response time was around 10ms and Random Forest's p90 response time was around 30ms
+        \item Made sure of online benchmarking, monitoring, tracing etc.
+        \item Reviewed and re‐desigined our data pipeline and services to improve its performance. I replaced old spark‐based solution for driver location gathering with Golang to handle 40K driver locations per second instead of former 8K per second.
+        \item Upgraded Cassandra cluster to handle 200k per second write ops instead of 73k per second
+        \item Used Apache beam over Spark so we could have tests for our pipeline stages.
+        \item Deployed our services in 3 different regions 
+        \item Changed the structure of data gathering to data driven using Kafka as CMQ. Our Kafka handles over 80k messages per second
+        \item Deployed and used data tools in our data pipeline for example Airflow for data gathering and preprocessing, Auto ML tools like H2O to reduce time in training and testing models, Feast as feature store etc
+        \item Mentored interns on projects 
+        \item Helped team on interviews and hiring process
+      \end{cvitems}
     }
 
 \end{cventries}
