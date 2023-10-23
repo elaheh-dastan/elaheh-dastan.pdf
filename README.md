@@ -1,8 +1,8 @@
-<h1 align="center"> 1995parham.pdf </h1>
+<h1 align="center"> elahe-dastan.pdf </h1>
 
 <p align="center">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/1995parham/1995parham.pdf/latex.yaml?logo=github&style=for-the-badge">
-  <img alt="Me" src="https://img.shields.io/badge/me-parham-orange?style=for-the-badge">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/elahe-dastan/elahe-dastan.pdf/latex.yaml?logo=github&style=for-the-badge">
+  <img alt="Me" src="https://img.shields.io/badge/me-elahe-orange?style=for-the-badge">
 </p>
 
 ## Introduction
@@ -22,6 +22,6 @@ Make the resume using [Tectonic](https://tectonic-typesetting.github.io/book/lat
 tectonic -X build
 ```
 
-## How to write a resume
+## Acknowledgement
 
-- [The punctuation Guide](http://www.thepunctuationguide.com/index.html)
+Based on [1995parham.pdf](https://github.com/1995parham/1995parham.pdf) structure.
