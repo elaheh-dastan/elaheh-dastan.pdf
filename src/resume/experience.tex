@@ -1,118 +1,80 @@
-%-------------------------------------------------------------------------------
-%	SECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsection{Work Experience}
+\section{Employment}
 
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
-\begin{cventries}
+\vspace{0.5cm}
 
-  \cventry
-    {ML Engineer} % Job title
-    {Avidnet Technology} % Organization
-    {Tehran, Iran} % Location
-    {September 2018 - Augest 2020} % Date(s)
-    {
-      \begin{cvitems}
-        \item The goal of the team was to keep track of elderly people behaviour 
-        \item Used Kalman filtering to know where a person is
-        \item Keep track of the places a person spends time on a regular basis and name them
-        \item Predict where the person should be in a time bucket and alert otherwise
-        \item Used Tensorflow Lite to run the model on mobile phones
-      \end{cvitems}
-    }
+\cventry{2021 -- present}{ML Engineer}{Snapp!}{Tehran, Iran}{}{}
+\begin{itemize}
+  \item The goal of the team is to give accurate, scalable and fast ETA (estimated time of arrival)
+  \item Refinement on routing engine ETA
+  \begin{itemize}
+    \item Used \textbf{matrix factorization} techniques like \textbf{ALS} to recommend speed for streets we don't have sufficient data for and fed it to routing engines, it improved our coverage from one million shard streets to 3 millions
+    \item Trained a \textbf{regression model} to improve routing engine ETA by 2\% on MAE (mean absolute error) metric
+  \end{itemize}
+  \item Benchmarking and testing our approaches
+  \begin{itemize}
+    \item Developed and deployed a benchmarking service with Golang to benchmark our routing engines and models and report the results online in \textbf{Grafana} dashboards. This service benchmarks around \textit{90,000} deliveries per day.
+  \end{itemize}
+  \item ETA based on Machine Learning and historical data instead of routing engines
+  \begin{itemize}
+    \item Gathered data from different sources like company central \textbf{ClickHouse} and other teams' databases, discussed with product managers and other teams to understand the data well. Created a data gathering pipeline and ran it periodically using \textbf{Airflow}. Collected over 30 million rides for 2 months.
+    \item Cleaned the data using our knowledge form the data and columns declaring confidence on the rides' ATA (Actual Time of Arrival) also used outlier removal algorithms like \textbf{isolation forest} to remove outliers. It reduced our data to 1/2.
+    \item Did feature engineering on the data for example using time as a cyclic feature, adding extra features like \textbf{Haversine distance}, adding an understanding of traffic behavior to feature vector, discretizing geometric features for some models and etc. Extended our feature vector size from 4 to 11.
+    \item Did EDA on data and sharded our dataset of Tehran rides to 4 smaller shards, we had to train a model for each shard but could reduce models' size and increase their accuracy.
+    \item Trained and tested more than 5 different models like \textbf{Random Forests} and \textbf{Fully Connected Neural Networks}. Used \textbf{Keras Tuner} to find best structure for NN models.
+    \item Developed a complete pipeline to train Neural Network models with different structures using \textbf{Tensorflow}. It outputs results on metrics we found cooperatively with product and commercial like \textbf{R2} and \textbf{negative error share}. It saves the model, its \textbf{Tensorboard} information and etc.
+    \item Deployed Neural Network models using \textbf{Tensorflow server} and and \textbf{Random Forest} models using \textbf{Fast API} on \textbf{Kubernetes}.
+    \item Included preprocessing layers in the Neural Network model to avoid needing any middleware for data preprocessing.
+    \item Load tested models using \textbf{K6}. The NN model's p90 response time was around 10ms and Random Forest's p90 response time was around 30ms.
+    \item Made sure of online benchmarking, monitoring, tracing etc.
+    \item Used \textbf{Streamlit} for my model for better communication with product team.
+    \item \textbf{Hierarchiacally clustered} Iran cities from over 40 down to 10 which helped a lot in reducing number of models.
+    \item Reduced short rides (rides that are finished under 10 minutes) \textbf{MAPE (mean absolute percentage error)} by 6\%.
+    \item Reduced total rides MAPE by 2\%.
+  \end{itemize}
+  \item Data Pipeline
+  \begin{itemize}
+    \item Reviewed and re‐desigined our data pipeline and services to improve its performance. I replaced old \textbf{spark}‐based solution for driver location gathering with Golang to handle 40K driver locations per second instead of former 8K per second.
+    \item Upgraded \textbf{Cassandra} cluster to handle 200k per second write ops instead of 73k per second
+    \item Used \textbf{Apache beam} over \textbf{Spark} so we could have tests for our pipeline stages.
+    \item Changed the structure of data gathering to data driven using \textbf{Kafka} as CMQ. Our Kafka handles over 80k messages per second
+    \item Deployed and used data tools in our data pipeline for example \textbf{Airflow} for data gathering and preprocessing, \textbf{AutoML} tools like \textbf{H2O} to reduce time in training and testing models, \textbf{Feast} as feature store etc
+  \end{itemize}
+  \item Extracurricular
+  \begin{itemize}
+    \item Deployed our services in 3 different regions of New York (Western, Central and Long Island)
+    \item Mentored interns and onboard them on projects
+    \item Helped team on interviews and hiring process
+    \item used \textbf{ONNX} to increase inference speed by 10\%
+    \item Contributed in team's 2022 3rd IEEE Intelligent Vehicles Symposium (IV)
+  \end{itemize}
+\end{itemize}
 
-%---------------------------------------------------------
-  \cventry
-    {Software Engineer} % Job title
-    {Snapp!} % Organization
-    {Tehran, Iran} % Location
-    {Aguest 2020 - September 2021} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item The team was responsible for user management, authentication and information security of users.
-        \item We designed a system for passenger and driver number masking, developed it in Golang and deployed it on virtual machines.
-        \item I migrated our services to Kubernetes on‐promise cloud using Helm charts and ArgoCD.
-        \item We used ArgoCD application list to automatically generate argo application for our services and then we create GitOps pipeline for managing configuration and secrets in Git with their history available.
-        \item I designed a system for automating the driver signup process which reduced driver registration time to 15 minutes and increased the number of registered drivers.
-        \item I fine tuned and deployed a pre-trained OCR model to read data from the social ID cards drivers uploaded in our driver sign up process. The model showed 92\% accuracy.
-      \end{cvitems}
-    }
+\vspace{0.5cm}
 
-%---------------------------------------------------------
-  \cventry
-    {ML Engineer} % Job title
-    {Snapp!} % Organization
-    {Tehran, Iran} % Location
-    {September 2021 - now} % Date(s)
-    {
-      \begin{cvitems} % Description(s) of tasks/responsibilities
-        \item The goal of the team is to give accurate, scalable and fast ETA (estimated time of arrival)
-        \item PoP (Refinement on routing engine ETA)
-        \begin{itemize}
-          \item Used matrix factorization techniques like ALS to recommend speed for streets we don't have sufficient data for and fed it to routing engines, it improved our coverage from one million shard streets to 3 millions
-          \item Trained a regression model to improve routing engine ETA by 2\% on MAE metric
-        \end{itemize}
-        \item Farsanj (Benchmarking and testing our approaches)
-        \begin{itemize}
-          \item Developed and deployed a benchmarking service with Golang to benchmark our routing engines and models and report the results online in Grafana dashboards. This service benchmarks around 90,000 rides per day
-        \end{itemize}
-        \item Nostradamus (ETA based on ML and historical data instead of routing engines)
-        \begin{itemize}
-          \item Gathered data from different sources like company central Clickhouse and other teams' databases, discussed with product managers and other teams to understand the data well. Created a data gathering pipeline and ran it periodically using Airflow. Collected over 30 million rides for 2 months
-          \item Cleaned the data using our knowledge form the data and columns declaring confidence on the rides' ATA (Actual Time of Arrival) also used outlier removal algorithms like isolation forest to remove outliers. It reduced our data to 1/2.
-          \item Did feature engineering on the data for example using time as a cyclic feature, adding extra features like Haversine distance, adding an understanding of traffic behavior to feature vector, discretizing geometric features for some models and etc. . Extended our feature vector size from 4 to 11.
-          \item Did EDA on data and sharded our dataset of Tehran rides to 4 smaller shards, we had to train a model for each shard but could reduce models' size and increase their accuracy
-          \item Trained and tested more than 5 different models like Random Forests and Fully Connected Neural Networks. Used Keras Tuner to find best structure for NN models
-          \item Developed a complete pipeline to train NN models with different structures using Tensorflow. It outputs results on metrics we found cooperatively with product and commercial like R2 and negative error share. It saves the model, its Tensorboard information and etc. .
-          \item Deployed NN models using Tensorflow server and and Random Forest models using Fast API on Kubernetes. 
-          \item Included preprocessing layers in the NN model to avoid needing any middleware for data preprocessing
-          \item Load tested models using K6. The NN model's p90 response time was around 10ms and Random Forest's p90 response time was around 30ms
-          \item Made sure of online benchmarking, monitoring, tracing etc.
-          \item Used Streamlit for my model for better communication with product team
-          \item Hierarchiacally clustered Iran cities from over 40 down to 10 which helped a lot in reducing number of models
-          \item Reduced short rides (rides under 10 minutes) MAPE by 6\%
-          \item Reduced total rides MAPE by 2\%
-          \item Became the first provider for three customers (navigation, car pooling and offering) in 7 cities
-        \end{itemize}
-        \item Data Pipeline
-        \begin{itemize}
-          \item Reviewed and re‐desigined our data pipeline and services to improve its performance. I replaced old spark‐based solution for driver location gathering with Golang to handle 40K driver locations per second instead of former 8K per second.
-          \item Upgraded Cassandra cluster to handle 200k per second write ops instead of 73k per second
-          \item Used Apache beam over Spark so we could have tests for our pipeline stages.
-          \item Changed the structure of data gathering to data driven using Kafka as CMQ. Our Kafka handles over 80k messages per second
-          \item Deployed and used data tools in our data pipeline for example Airflow for data gathering and preprocessing, Auto ML tools like H2O to reduce time in training and testing models, Feast as feature store etc
-        \end{itemize}
-        \item Extracurricular
-        \begin{itemize}
-          \item Deployed our services in 3 different regions (Iran \& Iraq)
-          \item Mentored interns on projects
-          \item Helped team on interviews and hiring process
-          \item used ONNX to increase inference speed by 10\%
-          \item Contributed in team's AI conference
-        \end{itemize}
-      \end{cvitems}
-    }
+\cventry{2020 -- 2021}{Software Engineer}{Snapp!}{Tehran, Iran}{}{}
+\begin{itemize}
+  \item The team was responsible for user management, authentication and information security of users.
+  \item We designed a system for customer and courier number masking, developed it in \textbf{Golang} and deployed it on \textbf{OpenNebula} virtual machines.
+  \item I migrated our services to \textbf{Kubernetes} on‐promise cloud using \textbf{Helm} charts and \textbf{ArgoCD}.
+  \item We used \textbf{ArgoCD} ApplicationSet to automatically generate ArgoCD Application for our services and then we create \textbf{GitOps} pipeline for managing configuration and secrets in Git with their history available.
+  \item I designed a system for automating the driver signup process which reduced driver registration time to 15 minutes and increased the number of registered drivers.
+  \item I fine tuned and deployed a pre-trained \textbf{OCR model} to read data from the social ID cards drivers uploaded in our drivers' sign up process. The model showed 92\% accuracy.
+\end{itemize}
 
-\end{cventries}
+\vspace{0.5cm}
 
-%-------------------------------------------------------------------------------
-%	SECTION TITLE
-%-------------------------------------------------------------------------------
-\cvsection{Teaching Experience}
-
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
-\begin{cventries}
-
-%---------------------------------------------------------
-  \cventry
-    {Teaching Assistant} % Job title
-    {Introduction to Programming} % Course
-    {Amirkabir University of Technology} % Organization
-    {Spring 2020} % Date(s)
-    {Under Supervision of Eng.~Alvani}
-
-\end{cventries}
+\cventry{2018 -- 2020}{ML Engineer}{Avidnet Technology}{Tehran, Iran}{}{}
+\begin{itemize}
+  \item The goal of the team was to keep track of elderly people behaviour with keeping their privacy.
+  \item Used \textbf{Kalman filtering} to know where a person is.
+  \item Keep track of the places a person spends time on a regular basis and name them.
+  \item Predict where the person should be in a time bucket and alert otherwise.
+  \item Used \textbf{Tensorflow Lite} to run the model on mobile phones.
+  \item Setup a \textbf{Kafka} pipeline to gather data from sensors using \textbf{Protobuf} and then stores them into our \textbf{DataLake} (which is set up using \textbf{Postgres}).
+  \item Make data compatible with GDPR before storing it.
+  \item Draw the map of the house using accumulated GPS points
+  \item Automatically make video calls with emergency contacts in case of abnormal behavior
+  \item Provide in-application video call solution using WebRTC based on Pion Framework in Golang
+  \item Setup turn server on AWS and use ELBs to open UDP/TCP ports
+  \item Handle 1K concurrent calls based on our distributed design
+\end{itemize}
