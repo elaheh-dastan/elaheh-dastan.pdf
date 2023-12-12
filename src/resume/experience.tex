@@ -32,7 +32,7 @@
   \item Data Pipeline
         \begin{itemize}
           \item Reviewed and re-designed our data pipeline and services to improve its performance.
-                I replaced old \textbf{spark}‐based solution for driver location gathering with Golang to handle 40K driver
+                I replaced old \textbf{spark}-based solution for driver location gathering with Golang to handle 40K driver
                 locations per second instead of former 8K per second.
           \item Upgraded \textbf{Cassandra} cluster to handle 200k per second write ops instead of 73k per second
           \item Used \textbf{Apache beam} over \textbf{Spark} so we could have tests for our pipeline stages.
