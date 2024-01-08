@@ -1,0 +1,42 @@
+% based on moderncv
+% https://www.ctan.org/pkg/moderncv
+\documentclass[11pt, a4paper, color, final]{moderncv}
+
+\moderncvstyle{banking}
+\moderncvcolor{orange}
+
+% adjust the page geometry
+\usepackage[scale=0.85]{geometry}
+\recomputelengths{}
+
+\let\oldtextbf\textbf
+\renewcommand{\textbf}[1]{\textcolor{orange}{\oldtextbf{#1}}}
+
+% personal data
+\firstname{Elahe}
+\lastname{Dastan}
+% \phone[mobile]{+98 920 570 54 17}
+\email{elahe.dstn@gmail.com}
+% \born{12 Oct 1999, Tehran}
+\homepage{elahe-dastan.github.io}
+% \address{23th, 5th, Shahrak Naz, Fardis}{Alborz, Iran}
+\social[linkedin][www.linkedin.com/in/elahe-dastan/]{elahe-dastan}
+\social[github][github.com/elahe-dastan]{elahe-dastan}
+\social[googlescholar][scholar.google.com/citations?user=1BxI0JkAAAAJ]{Elahe Dastan}
+
+\begin{document}
+
+\baselineskip=1.5\baselineskip
+\setlength\itemsep{5em}
+
+\maketitle
+
+\input{resume-software/summary.tex}
+
+\input{resume-software/experience.tex}
+
+\input{resume-software/education.tex}
+
+\input{resume-software/skills.tex}
+
+\end{document}
