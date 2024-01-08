@@ -1,0 +1,73 @@
+\section{Employment}
+
+\cventry{2023 -- present}{Platform Engineer}{Snapp!}{Tehran, Iran}{}{}
+\begin{itemize}
+      \item Led the design and implementation of a scalable, microservice-based architecture for a delivery industry application,
+            using \httpslink[\textbf{NATS}]{nats.io} as the primary message-passing system for more than 125 clients and delivering
+            more that 300k messages per second.
+      \item Setup \textbf{Machine learning pipelines} using classical and neural network algorithms on \textbf{Kubernetes}.
+      \item Lunch and monitor Kubernetes pods launched periodically by \httpslink[\textbf{Airflow}]{airflow.apache.org} for data processing.
+      \item Setup \httpslink[\textbf{Seldon}]{www.seldon.io} for Data scientists so they can serve they models easily and without getting help from Dev team.
+      \item Deploy Kafka on Kubernetes using \httpslink[\textbf{Strimzi}]{https://strimzi.io/} operator and maintain it to handle 300k message per second.
+      \item Deploy Airflow on Amazon Elastic Compute Cloud (\textbf{EC2}) instances and then use its Amazon Elastic Container Service (\textbf{ECS}) operator to run our jobs.
+      \item Deploy NATS on Red Hat OpenShift Service on AWS (\textbf{ROSA})
+            using its Helm chart to reduce costs by deprecating Amazon Simple Queue Service (\textbf{SQS}).
+      \item Setup Spark on AWS using Amazon Elastic Map Reduce (\textbf{EMR}).
+      \item Migrate our Push Notification service to use Amazon Simple Notification Service (\textbf{SNS})
+      \item Mentoring teams for effective use of NATS and other messaging systems that exists in across companies and vendors.
+      \item Actively managed and resolved over 5 critical incidents as an on-call during last 6 months.
+      \item Demonstrated a passion for technology and a positive approach to work,
+            while maintaining strong communication and collaboration skills with engineering
+            and non-engineering stakeholders alike.
+      \item Working with \textbf{Rust} to implement concurrent, safe and performant Kubernetes operator for forcing
+            policies over NATS CRDs including streams and consumers.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\cventry{2020 -- 2023}{Software Engineer}{Snapp!}{Tehran, Iran}{}{}
+\begin{itemize}
+      \item Optimized driver location collector (written in PHP) by migrating it into a modern platform, re-written in Go and cloud infrastructure,
+            increasing availability by 20\% and facilitating faster rollout of new functionalities.
+      \item Developed a \textbf{real-time stream processing} service to dynamically adjust pricing and balance demand and supply,
+            resulting in a 5\% increase in the number of accepted rides.
+      \item Developed and maintained backend services in \textbf{Golang} to ensure
+            high \textbf{performance} and \textbf{reliability} for real-time order processing and \textbf{delivery tracking},
+            and engineered a suite of \textbf{microservices} to enable real-time \textbf{geofencing} and in-memory geospatial
+            indexing using \httpslink[\textbf{Tile38}]{tile38.com} with \textbf{sub-millisecond} response times.
+      \item The team was responsible for user management, authentication and information security of users.
+      \item Design \textbf{RESTFul} microservices for doing authentication, authorization and signup procedures which handles more 100k request per second.
+      \item Re-write Golang projects to follow best practices like \textbf{DDD}, \textbf{SOLID}, etc.
+      \item We designed a system for customer and courier number masking, developed it in \textbf{Golang} and deployed it on \textbf{OpenNebula} virtual machines.
+      \item I migrated our services to \textbf{Kubernetes} on-promise cloud using \textbf{Helm} charts and \textbf{ArgoCD}.
+      \item We used \httpslink[\textbf{ArgoCD}]{argo-cd.readthedocs.io/en/stable} ApplicationSet to automatically generate ArgoCD Application for our services and then we create \textbf{GitOps} pipeline for managing configuration and secrets in Git with their history available.
+      \item I designed a system for automating the driver sign up process which reduced driver registration time to 15 minutes and increased the number of registered drivers.
+      \item I fine tuned and deployed a pre-trained \textbf{OCR model} to read data from the social ID cards drivers uploaded in our drivers' sign up process. The model showed 92\% accuracy.
+      \item Designed and optimized databases using \textbf{PostgreSQL} and \textbf{MongoDB},
+        and implemented monitoring and alerting systems for real-time application observability using \textbf{OpenTelemetry}.
+      \item Setup prototype validator based on \textbf{Envoy}'s \textbf{gRPC} interface. We use its gRPC interface to do the validation for incoming request
+            based on headers, etc. Using this approach we could replace public keys in runtime.
+      \item Mentoring Junior developers and help them to write clean, understandable and extendable code that scales well with the load.
+      \item Setup CI/CD pipelines using GitLab CI.
+\end{itemize}
+
+\vspace{0.5cm}
+
+\cventry{2018 -- 2020}{Software Engineer}{Avidnet Technology}{Tehran, Iran}{}{}
+\begin{itemize}
+      \item The goal of the team was to keep track of elderly people behavior with keeping their privacy.
+      \item Used \textbf{Kalman filtering} to know where a person is.
+      \item Keep track of the places a person spends time on a regular basis and name them.
+      \item Predict where the person should be in a time bucket and alert otherwise.
+      \item Used \textbf{Tensorflow Lite} to run the model on mobile phones.
+      \item Setup a \textbf{Kafka} pipeline to gather data from sensors using \textbf{Protobuf} and then stores them into our \textbf{DataLake} (which is set up using \textbf{Postgres}).
+      \item Make data compatible with GDPR before storing it.
+      \item Draw the map of the house using accumulated GPS points
+      \item Automatically make video calls with emergency contacts in case of abnormal behavior
+      \item Provide in-application video call solution using WebRTC based on Pion Framework in Golang
+      \item Setup turn server on AWS and use ELBs to open UDP/TCP ports
+      \item Handle 1K concurrent calls based on our distributed design
+      \item Setup project on Google Cloud Platform (\textbf{GCP}) Compute Engine using \textbf{Terraform}.
+      \item Setup CI/CD pipelines using GitHub Actions.
+      \item Helping the frontend team to develop related components using \textbf{Typescript} and \textbf{React}
+\end{itemize}
