@@ -15,7 +15,6 @@
             to run more than 100 jobs.
       \item Configure NATS on Red Hat OpenShift Service on AWS (\textbf{ROSA})
             using its Helm chart to lower costs 10\% by deprecating Amazon Simple Queue Service (\textbf{SQS}).
-      \item Migrate our Push Notification service to use Amazon Simple Notification Service (\textbf{SNS})
       \item Setup security, access management and control solutions using \textbf{Teleport} for around 10 services.
       \item Using \textbf{FastAPI} to serve more than 10 models for the data team on cloud.
       \item Working with \textbf{Rust} to implement concurrent, safe and performant Kubernetes operator for forcing
@@ -33,16 +32,16 @@
             increasing availability by 20\% and facilitating faster rollout of new functionalities.
       \item Developed a \textbf{real-time stream processing} service to dynamically adjust pricing and balance demand and supply,
             resulting in a 5\% increase in the number of accepted rides.
-      \item Developed and maintained backend services in \textbf{Golang} to ensure
+      \item Built and maintained backend services in \textbf{Golang} to ensure
             high \textbf{performance} and \textbf{reliability} for real-time order processing and \textbf{delivery tracking},
             and engineered a suite of \textbf{microservices} to enable real-time \textbf{geofencing} and in-memory geospatial
             indexing using \httpslink[\textbf{Tile38}]{tile38.com} with \textbf{sub-millisecond} response times.
       \item Design \textbf{RESTFul} microservices for doing authentication, authorization and sign-up procedures which handles more 100k request per second.
       \item Re-write +2 Golang projects to follow best practices like \textbf{DDD}, \textbf{SOLID}, etc.
-      \item We designed a system for customer and courier number masking, developed it in \textbf{Golang}
+      \item We designed a system for driver and passenger number masking, coded it in \textbf{Golang}
             and deployed it on virtual machines managed by \textbf{OpenNebula}. More than 30% of customers are using this feature.
       \item Migrated +20 of our services to \textbf{Kubernetes} on-promise cloud using \textbf{Helm} charts \textbf{andArgoCD}.
-      \item We used \httpslink[\textbf{ArgoCD}]{argo-cd.readthedocs.io/en/stable} ApplicationSet to automatically generate ArgoCD Application
+      \item We utilize \httpslink[\textbf{ArgoCD}]{argo-cd.readthedocs.io/en/stable} ApplicationSet to automatically generate ArgoCD Application
             for our services and then we create \textbf{GitOps} pipeline for managing configuration
             and secrets in Git with their history available.
       \item Designed a system for automating the driver sign up process which decreased driver registration time to 15 minutes and increased the number of registered drivers.
@@ -56,10 +55,9 @@
 \cventry{Jan 2018 -- Aug 2020}{Software Engineer}{Avidnet Technology}{Tehran, Iran}{}{}
 \begin{itemize}
       \item The goal of the team was to keep track of elderly people behavior with keeping their privacy.
-      \item Used \textbf{Kalman filtering} to know where a person is.
       \item Keep track of the places a person spends time on a regular basis and name them.
       \item Predict where the person should be in a 30 minute time bucket and alert otherwise.
-      \item Used \textbf{Tensorflow Lite} to run the model on mobile phones.
+      \item Employed \textbf{Tensorflow Lite} to run the model on mobile phones.
       \item Setup a \textbf{Kafka} pipeline to gather data from sensors using \textbf{Protobuf} and
             then stores them into our \textbf{DataLake} (which is set up using \textbf{Postgres}) and can handle +20k messages per second.
       \item Make data compatible with GDPR before storing it.
