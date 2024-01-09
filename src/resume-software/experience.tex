@@ -6,10 +6,10 @@
             using \httpslink[\textbf{NATS}]{nats.io} as the primary message-passing system for \textbf{+125 clients} and delivering
             \textbf{+300k messages per second}.
       \item Setup \textbf{Machine learning pipelines} including \httpslink[\textbf{Airflow}]{airflow.apache.org} and
-      \httpslink[\textbf{Seldon}]{www.seldon.io} which reduced ML models \textbf{response time} by \textbf{15\%}
+            \httpslink[\textbf{Seldon}]{www.seldon.io} which reduced ML models \textbf{response time} by \textbf{15\%}
             with help of batch request and \textbf{gRPC} protocol.
       \item Set up Kafka on Kubernetes using \httpslink[\textbf{Strimzi}]{strimzi.io} operator and maintain it to handle +300k
-      message per second, +50 topics.
+            message per second, +50 topics.
       \item Deploy Airflow on Amazon Elastic Compute Cloud (\textbf{EC2}) instances and then use
             its Amazon Elastic Container Service (\textbf{ECS}) operator
             to run more than 100 jobs.
@@ -39,7 +39,7 @@
       \item Design \textbf{RESTFul} microservices for doing authentication, authorization and sign-up procedures which handles more 100k request per second.
       \item Re-write +2 Golang projects to follow best practices like \textbf{DDD}, \textbf{SOLID}, etc.
       \item We designed a system for driver and passenger number masking, coded it in \textbf{Golang}
-            and deployed it on virtual machines managed by \textbf{OpenNebula}. More than 30% of customers are using this feature.
+            and deployed it on virtual machines managed by \textbf{OpenNebula}. More than 30\% of customers are using this feature.
       \item Migrated +20 of our services to \textbf{Kubernetes} on-promise cloud using \textbf{Helm} charts \textbf{andArgoCD}.
       \item We utilize \httpslink[\textbf{ArgoCD}]{argo-cd.readthedocs.io/en/stable} ApplicationSet to automatically generate ArgoCD Application
             for our services and then we create \textbf{GitOps} pipeline for managing configuration
@@ -60,7 +60,7 @@
       \item Setup a \textbf{Kafka} pipeline to gather data from sensors using \textbf{Protobuf} and
             then stores them into our \textbf{DataLake} (which is set up using \textbf{Postgres}) and can handle +20k messages per second.
       \item Draw the map of the house using accumulated GPS points
-      \item Provide in-application video call solution using \textbf{WebRTC} based on \textbf{Pion} Framework in Golang which increaseed application intallation rate by 5%.
+      \item Provide in-application video call solution using \textbf{WebRTC} based on \textbf{Pion} Framework in Golang which increased application installation rate by 5%.
       \item Setup turn server on AWS and use ELBs to open UDP/TCP ports
       \item Handle 1K concurrent calls based on our distributed design.
       \item Setup project on Google Cloud Platform (\textbf{GCP}) Compute Engine using \textbf{Terraform}.
