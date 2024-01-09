@@ -15,10 +15,17 @@
             \end{itemize}
       \item ETA based on Machine Learning and historical data instead of routing engines
             \begin{itemize}
-                  \item Gathered data from different sources like company central \textbf{ClickHouse} and other teams' databases, discussed with product managers and other teams to understand the data well. Created a data gathering pipeline and ran it periodically using \textbf{Airflow}. Collected over 30 million rides for 2 months.
-                  \item Cleaned the data using our knowledge form the data and columns declaring confidence on the rides' ATA (Actual Time of Arrival) also used outlier removal algorithms like \textbf{isolation forest} to remove outliers. It reduced our data to 1/2.
-                  \item Did feature engineering on the data for example using time as a cyclic feature, adding extra features like \textbf{Haversine distance}, adding an understanding of traffic behavior to feature vector, discretizing geometric features for some models and etc. Extended our feature vector size from 4 to 11.
-                  \item Did EDA on data and shared our dataset of Tehran rides to 4 smaller shards, we had to train a model for each shard but could reduce models' size and increase their accuracy.
+                  \item Gathered data from different sources like company central \textbf{ClickHouse} and other teams' databases,
+                        discussed with product managers and other teams to understand the data well.
+                        Created a data gathering pipeline and ran it periodically using \textbf{Airflow}. Collected over 30 million rides for 2 months.
+                  \item Cleaned the data using our knowledge form the data and columns declaring confidence on the rides' ATA (Actual Time of Arrival)
+                        also used outlier removal algorithms like \textbf{isolation forest} to remove outliers. It reduced our data to 1/2.
+                  \item Did feature engineering on the data for example using time as a cyclic feature,
+                        adding extra features like \textbf{Haversine distance}, adding an understanding
+                        of traffic behavior to feature vector, discretized geometric features for some models and etc.
+                        Extended our feature vector size from 4 to 11.
+                  \item Did \textbf{EDA} on data and shared our dataset of Tehran rides to 4 smaller shards,
+                        we had to train a model for each shard but could reduce models' size and increase their accuracy.
                   \item Trained and tested more than 5 different models like \textbf{Random Forests} and \textbf{Fully Connected Neural Networks}. Used \textbf{Keras Tuner} to find best structure for NN models.
                   \item Developed a complete pipeline to train Neural Network models with different structures using \textbf{Tensorflow}. It outputs results on metrics we found cooperatively with product and commercial like \textbf{R2} and \textbf{negative error share}. It saves the model, its \textbf{Tensorboard} information and etc.
                   \item Deployed Neural Network models using \textbf{Tensorflow server} and and \textbf{Random Forest} models using \textbf{Fast API} on \textbf{Kubernetes}.
