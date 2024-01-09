@@ -6,31 +6,36 @@
             using \httpslink[\textbf{NATS}]{nats.io} as the primary message-passing system for more than 125 clients and delivering
             more that 300k messages per second.
       \item Setup \textbf{Machine learning pipelines} using classical and neural network algorithms on \textbf{Kubernetes}.
-      \item Lunch and monitor Kubernetes pods launched periodically by \httpslink[\textbf{Airflow}]{airflow.apache.org} for data processing.
-      \item Setup \httpslink[\textbf{Seldon}]{www.seldon.io} for Data scientists so they can serve they models easily and without getting help from Dev team.
+      \item Configure \httpslink[\textbf{Airflow}]{airflow.apache.org} pod operator for running job using pods periodically on SnappCloud.
+      \item Setup \httpslink[\textbf{Seldon}]{www.seldon.io} for Data scientists so they can serve their models easily
+            and without getting help from Dev team.
+      \item Setup Google \textbf{Spark operator} on SnappCloud.
       \item Deploy Kafka on Kubernetes using \httpslink[\textbf{Strimzi}]{https://strimzi.io/} operator and maintain it to handle 300k message per second.
-      \item Deploy Airflow on Amazon Elastic Compute Cloud (\textbf{EC2}) instances and then use its Amazon Elastic Container Service (\textbf{ECS}) operator to run our jobs.
+      \item Deploy Airflow on Amazon Elastic Compute Cloud (\textbf{EC2}) instances and then use
+            its Amazon Elastic Container Service (\textbf{ECS}) operator
+            to run our jobs.
       \item Deploy NATS on Red Hat OpenShift Service on AWS (\textbf{ROSA})
             using its Helm chart to reduce costs by deprecating Amazon Simple Queue Service (\textbf{SQS}).
       \item Setup Spark on AWS using Amazon Elastic Map Reduce (\textbf{EMR}).
       \item Migrate our Push Notification service to use Amazon Simple Notification Service (\textbf{SNS})
       \item Mentoring teams for effective use of NATS and other messaging systems that exists in across companies and vendors.
       \item Actively managed and resolved over 5 critical incidents as an on-call during last 6 months.
-      \item Demonstrated a passion for technology and a positive approach to work,
-            while maintaining strong communication and collaboration skills with engineering
-            and non-engineering stakeholders alike.
       \item Setup security, access management and control solutions using \textbf{Teleport}.
       \item Deployed recurrent pipelines to Kubernetes using \textbf{ArgoCD Workflow}
       \item Using \textbf{FastAPI} to serve models for the data team and then deploy them on cloud.
       \item Working with \textbf{Rust} to implement concurrent, safe and performant Kubernetes operator for forcing
             policies over NATS CRDs including streams and consumers.
+      \item Deploy \textbf{Cassandra} on Virtual Machines to support teams that wants availability over consistency.
+      \item Demonstrated a passion for technology and a positive approach to work,
+            while maintaining strong communication and collaboration skills with engineering
+            and non-engineering stakeholders alike.
 \end{itemize}
 
 \vspace{0.5cm}
 
 \cventry{2020 -- 2023}{Software Engineer}{Snapp!}{Tehran, Iran}{}{}
 \begin{itemize}
-      \item Optimized driver location collector (written in PHP) by migrating it into a modern platform, re-written in Go and cloud infrastructure,
+      \item Optimized driver location collector (written in \textbf{PHP}) by migrating it into a modern platform, re-written in \textbf{Go} and cloud infrastructure,
             increasing availability by 20\% and facilitating faster rollout of new functionalities.
       \item Developed a \textbf{real-time stream processing} service to dynamically adjust pricing and balance demand and supply,
             resulting in a 5\% increase in the number of accepted rides.
@@ -42,12 +47,12 @@
       \item Re-write Golang projects to follow best practices like \textbf{DDD}, \textbf{SOLID}, etc.
       \item We designed a system for customer and courier number masking, developed it in \textbf{Golang}
             and deployed it on virtual machines managed by \textbf{OpenNebula}.
-      \item I migrated our services to \textbf{Kubernetes} on-promise cloud using \textbf{Helm} charts and \textbf{ArgoCD}.
+      \item Migrated our services to \textbf{Kubernetes} on-promise cloud using \textbf{Helm} charts and \textbf{ArgoCD}.
       \item We used \httpslink[\textbf{ArgoCD}]{argo-cd.readthedocs.io/en/stable} ApplicationSet to automatically generate ArgoCD Application
             for our services and then we create \textbf{GitOps} pipeline for managing configuration
             and secrets in Git with their history available.
-      \item I designed a system for automating the driver sign up process which reduced driver registration time to 15 minutes and increased the number of registered drivers.
-      \item I fine tuned and deployed a pre-trained \textbf{OCR model} to read data from the social ID cards drivers uploaded in our drivers' sign up process. The model showed 92\% accuracy.
+      \item Designed a system for automating the driver sign up process which reduced driver registration time to 15 minutes and increased the number of registered drivers.
+      \item Fine tuned and deployed a pre-trained \textbf{OCR model} to read data from the social ID cards drivers uploaded in our drivers' sign up process. The model showed 92\% accuracy.
       \item Designed and optimized databases using \textbf{PostgreSQL} and \textbf{MongoDB},
             and implemented monitoring and alerting systems for real-time application observability using \textbf{OpenTelemetry}.
       \item Setup prototype validator based on \textbf{Envoy}'s \textbf{gRPC} interface. We use its gRPC interface to do the validation for incoming request
@@ -69,10 +74,10 @@
             then stores them into our \textbf{DataLake} (which is set up using \textbf{Postgres}).
       \item Make data compatible with GDPR before storing it.
       \item Draw the map of the house using accumulated GPS points
-      \item Automatically make video calls with emergency contacts in case of abnormal behavior
-      \item Provide in-application video call solution using WebRTC based on Pion Framework in Golang
+      \item Automatically make video calls with emergency contacts in case of abnormal behavior.
+      \item Provide in-application video call solution using \textbf{WebRTC} based on \textbf{Pion} Framework in Golang.
       \item Setup turn server on AWS and use ELBs to open UDP/TCP ports
-      \item Handle 1K concurrent calls based on our distributed design
+      \item Handle 1K concurrent calls based on our distributed design.
       \item Setup project on Google Cloud Platform (\textbf{GCP}) Compute Engine using \textbf{Terraform}.
       \item Setup CI/CD pipelines using GitHub Actions.
       \item Helping the frontend team to develop related components using \textbf{Typescript} and \textbf{React}
