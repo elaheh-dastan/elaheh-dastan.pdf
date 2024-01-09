@@ -26,7 +26,7 @@
             policies over NATS CRDs including streams and consumers.
       \item Deploy \textbf{Cassandra} with 5 nodes on Virtual Machines to support teams that prefer availability over consistency.
       \item Setup \textbf{Avro Schema Registry} using Redpandas on SnappCloud
-      \item Use \textbf{Kafka stream} to  on SnappCloud
+      \item Implemented exactly once semantics using \textbf{kafka stream} from topic to topic for 2 services.
       \item Demonstrated a passion for technology and a positive approach to work,
             while maintaining strong communication and collaboration skills with engineering
             and non-engineering stakeholders alike.
@@ -45,9 +45,9 @@
             and engineered a suite of \textbf{microservices} to enable real-time \textbf{geofencing} and in-memory geospatial
             indexing using \httpslink[\textbf{Tile38}]{tile38.com} with \textbf{sub-millisecond} response times.
       \item Design \textbf{RESTFul} microservices for doing authentication, authorization and sign-up procedures which handles more 100k request per second.
-      \item Re-write Golang projects to follow best practices like \textbf{DDD}, \textbf{SOLID}, etc.
+      \item Re-write +2 Golang projects to follow best practices like \textbf{DDD}, \textbf{SOLID}, etc.
       \item We designed a system for customer and courier number masking, developed it in \textbf{Golang}
-            and deployed it on virtual machines managed by \textbf{OpenNebula}.
+            and deployed it on virtual machines managed by \textbf{OpenNebula}. More than 30% of customers are using this feature.
       \item Migrated +20 of our services to \textbf{Kubernetes} on-promise cloud using \textbf{Helm} charts \textbf{andArgoCD}.
       \item We used \httpslink[\textbf{ArgoCD}]{argo-cd.readthedocs.io/en/stable} ApplicationSet to automatically generate ArgoCD Application
             for our services and then we create \textbf{GitOps} pipeline for managing configuration
@@ -69,10 +69,10 @@
       \item The goal of the team was to keep track of elderly people behavior with keeping their privacy.
       \item Used \textbf{Kalman filtering} to know where a person is.
       \item Keep track of the places a person spends time on a regular basis and name them.
-      \item Predict where the person should be in a time bucket and alert otherwise.
+      \item Predict where the person should be in a 30 minute time bucket and alert otherwise.
       \item Used \textbf{Tensorflow Lite} to run the model on mobile phones.
       \item Setup a \textbf{Kafka} pipeline to gather data from sensors using \textbf{Protobuf} and
-            then stores them into our \textbf{DataLake} (which is set up using \textbf{Postgres}).
+            then stores them into our \textbf{DataLake} (which is set up using \textbf{Postgres}) and can handle +20k messages per second.
       \item Make data compatible with GDPR before storing it.
       \item Draw the map of the house using accumulated GPS points
       \item Automatically make video calls with emergency contacts in case of abnormal behavior.
