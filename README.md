@@ -25,3 +25,24 @@ tectonic -X build
 ## Acknowledgement
 
 Based on [1995parham.pdf](https://github.com/1995parham/1995parham.pdf) structure.
+
+## Descriptions
+
+During applying for jobs procedures, you may need to write down a short description about yourself which
+could be useful for another companies too.
+
+Each paragraph in the each following section can be used standalone.
+
+### Awards
+
+I ranked below 400 in the math and physics university entrance exam in Iran, with over 1 million participants.
+My team and I successfully published a paper, available at https://arxiv.org/abs/2309.09830.
+My team and I participated in a Hackathon, where we performed sentiment analysis on tweets about the company,
+securing the third position among 30 teams. You can find our project at https://github.com/elahe-dastan/Fallgoosh.
+
+### Technical Achievements
+
+One of the recent achievements I take pride in is implementing ETA predictions using ML models and successfully deploying them not only in Iran but also in Iraq.
+I spearheaded this project from its conceptualization, successfully persuading both the Product team and stakeholders. Over the past three quarters,
+our ML models have seamlessly replaced routing engines in Gilan and Shiraz, Iran, as well as Baghdad and Basra, Iraq.
+In addition to addressing accuracy and pattern challenges, we've significantly improved response times and reduced the required storage capacity.
