@@ -2,7 +2,6 @@
 
 \cventry{2021 -- present}{Senior ML Engineer}{Snapp!}{Tehran, Iran}{}{
       \begin{itemize}[label=\textbullet]
-            %\item The goal of the team is to give accurate, scalable and fast ETA (estimated time of arrival)
             \item Refinement on routing engine ETA
             \item Used \textbf{matrix factorization} techniques like \textbf{ALS} to recommend speed for streets we don't have sufficient data for and fed it to routing engines, it improved our coverage from one million shard streets to 3 millions
             \item Trained a \textbf{regression model} to improve routing engine ETA by 2\% on MAE (mean absolute error) metric
@@ -26,20 +25,27 @@
             \item Deployed Neural Network models using \textbf{Tensorflow server} and and \textbf{Random Forest} models using \textbf{Fast API} on \textbf{Kubernetes}.
             \item Included preprocessing layers in the Neural Network model to avoid needing any middleware for data preprocessing.
             \item Load tested models using \textbf{K6}. The NN model's p90 response time was around 10ms and Random Forest's p90 response time was around 30ms. Made sure of online benchmarking, monitoring, tracing etc.
-                  %\item Used \textbf{Streamlit} for my model for better communication with product team.
-                  %\item \textbf{Hierarchically clustered} Iran cities from over 40 down to 10 which helped a lot in reducing number of models.
-                  %\item Reduced short rides (rides that are finished under 10 minutes) \textbf{MAPE (mean absolute percentage error)} by 6\% and Reduced total rides MAPE by 2\%.
       \end{itemize}
 }
 
 % TODO (parham): please find a better way instead of manually breaking page.
-%\vspace{1.5cm}
-\pagebreak
+\vspace{.5cm}
+%\pagebreak
+
+\cventry{2021 -- present}{Senior ML Engineer}{Snapp!}{Tehran, Iran}{}{
+      \begin{itemize}[label=\textbullet]
+            \item Used \textbf{Streamlit} for my model for better communication with product team.
+            \item \textbf{Hierarchically clustered} Iran cities from over 40 down to 10 which helped a lot in reducing number of models.
+            \item Reduced short rides (rides that are finished under 10 minutes) \textbf{MAPE (mean absolute percentage error)} by 6\% and Reduced total rides MAPE by 2\%.
+            \item The goal of the team is to give accurate, scalable and fast ETA (estimated time of arrival)
+      \end{itemize}
+}
+
+\vspace{.5cm}
 
 \cventry{2020 -- 2021}{Senior ML Engineer}{Snapp!}{Tehran, Iran}{}{
       \vspace{.4cm}
       \begin{itemize}[label=\textbullet]
-            % \item Data Pipeline
             \item Reviewed and re-designed our data pipeline and services to improve its performance.
                   I replaced old \textbf{spark}-based solution for driver location gathering with Golang to handle 40K driver
                   locations per second instead of former 8K per second.
@@ -47,7 +53,6 @@
             \item Used \textbf{Apache beam} over \textbf{Spark} so we could have tests for our pipeline stages.
             \item Changed the structure of data gathering to data driven using \textbf{Kafka} as CMQ. Our Kafka handles over 80k messages per second
             \item Deployed and used data tools in our data pipeline for example \textbf{Airflow} for data gathering and preprocessing, \textbf{AutoML} tools like \textbf{H2O} to reduce time in training and testing models, \textbf{Feast} as feature store etc
-                  % \item Extracurricular
             \item Deployed our services in 3 different regions
             \item Mentored interns and onboard them on projects
             \item Helped team on interviews and hiring process
