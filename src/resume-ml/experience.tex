@@ -4,7 +4,7 @@
       \begin{itemize}[label=\textbullet]
             \item Conceptualized \textbf{matrix factorization} techniques like \textbf{ALS} to recommend speed for streets that don't have sufficient data which \textbf{improved coverage from one million shard streets to 3 millions}.
             \item Started a project to give ETA(estimated time of arrival) using ML models (\textbf{Random Forests} and \textbf{Fully Connected Neural Networks}) in over 5 cities in both Iran and Iraq that overally improved R2 by 20\%.
-            \item Developed a complete pipeline to train, version and deploy models using Spark, MLFlow, Katib, Feast, TensorflowServer, FastAPI that reduced process time 70\%.
+            \item Developed a complete pipeline to train, version and deploy models using \textbf{Airflow, Spark, MLFlow, Katib, Feast, TensorflowServer, FastAPI} that reduced process time 70\%.
             \item Load tested models using \textbf{K6}. The NN model's p90 response time was around 10ms and Random Forest's p90 response time was around 30ms. Made sure of online benchmarking, monitoring, tracing.
             \item Clustered Iran cities \textbf{Hierarchically} from over 40 down to 10 which helped in reducing number of models.
       \end{itemize}
@@ -12,16 +12,10 @@
 
 \vspace{.5cm}
 
-\cventry{2020 -- 2021}{Senior ML Engineer}{Snapp!}{Tehran, Iran}{}{
+\cventry{2020 -- 2021}{ML Engineer}{Snapp!}{Tehran, Iran}{}{
       \vspace{.4cm}
       \begin{itemize}[label=\textbullet]
-            \item Re-designed data pipeline and services to improve its performance. Replaced old \textbf{spark}-based solution for driver location gathering with Golang to handle 40K driver
-                  locations per second instead of former 8K per second.
-            \item Upgraded \textbf{Cassandra} cluster to handle 200k per second write ops instead of 73k per second
-            \item Used \textbf{Apache beam} over \textbf{Spark} so we could have tests for our pipeline stages.
-            \item Changed the structure of data gathering to data driven using \textbf{Kafka} as CMQ that handles over 80k messages per second
-            \item Deployed data tools in data pipeline for example \textbf{Airflow} for data gathering and preprocessing, \textbf{AutoML} tools like \textbf{H2O} to reduce time in training and testing models, \textbf{Feast} as feature store etc
-            \item Mentored interns and onboard them on projects. Helped team on interviews and hiring process
+            \item Mentored over 5 new joiners, launched a consistent mentorship program and a new interview pipeline..
             \item used \textbf{ONNX} to increase inference speed by 10\%
             \item Contributed in team's 2022 3rd IEEE Intelligent Vehicles Symposium (IV)
       \end{itemize}
@@ -33,14 +27,10 @@
       \vspace{.4cm}
       \begin{itemize}[label=\textbullet]
             \item Used \textbf{Kalman filtering} to know where a person is.
-            \item Predicted where the person should be in a time bucket and alert otherwise.
-            \item Used \textbf{Tensorflow Lite} to run the model on mobile phones.
-            \item Set up a \textbf{Kafka} pipeline to gather data from sensors using \textbf{Protobuf} and then stores them into our \textbf{DataLake} (which is set up using \textbf{Postgres}).
+            \item Predicted where the person should be in a 30 minute time bucket and alert otherwise.
+            \item Employed \textbf{Tensorflow Lite} for models to reduce memory usage by 50\% to be able to run the model on mobile phones.
+            \item Launched a \textbf{Kafka} pipeline to gather data from sensors using \textbf{Protobuf} and store into \textbf{DataLake} capable of handling \textbf{+20k messages per second}.
             \item Drew the map of the house using accumulated GPS points
             \item Made video calls automaticallywith emergency contacts in case of abnormal behavior
-            \item Provided in-application video call solution using WebRTC based on Pion Framework in Golang
-            \item Set up turn server on AWS and use ELBs to open UDP/TCP ports
-            \item Handled 1K concurrent calls based on our distributed design
-            \item Set up project on Google Cloud Platform (\textbf{GCP}) Compute Engine using \textbf{Terraform}.
       \end{itemize}
 }
