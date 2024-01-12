@@ -1,40 +1,33 @@
-% based on moderncv
-% https://www.ctan.org/pkg/moderncv
-\documentclass[12pt, a4paper, sans]{moderncv}
-
+\documentclass[11pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+% Select font (comment out lines 4-7 to use Computer Modern)
+\usepackage{charter}
+%\usepackage[default]{lato}
+% \usepackage[sfdefault]{carlito}
+% \usepackage{tgpagella}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
 \usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
 
-\moderncvstyle{banking}
-%\moderncvcolor{orange}
+\raggedright
+\pagestyle{empty}
 
-% adjust the page geometry
-\usepackage[scale=0.85]{geometry}
-\recomputelengths{}
+% format section headings
+\titleformat{\section}{\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-8pt}]
 
-% personal data
-\firstname{Elahe}
-\lastname{Dastan}
-% \phone[mobile]{+98 920 570 54 17}
-\email{elahe.dstn@gmail.com}
-% \born{12 Oct 1999, Tehran}
-\homepage{elahe-dastan.github.io}
-% \address{23th, 5th, Shahrak Naz, Fardis}{Alborz, Iran}
-\social[linkedin][www.linkedin.com/in/elahe-dastan/]{elahe-dastan}
-\social[github][github.com/elahe-dastan]{elahe-dastan}
-\social[googlescholar][scholar.google.com/citations?user=1BxI0JkAAAAJ]{Elahe Dastan}
+% format bullet points
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
 
 \begin{document}
 
-\baselineskip=1.5\baselineskip
-\setlength\itemsep{5em}
+\centerline{\Huge Elahe Dastan}
+\centerline{elahe.dstn@gmail.com | elahe-dastan.github.io | github.com/elahe-dastan}
 
-\maketitle
-
+\input{resume-software/skills.tex}
 \input{resume-software/experience.tex}
 \input{resume-software/education.tex}
-\input{resume-software/skills.tex}
 
 \end{document}
