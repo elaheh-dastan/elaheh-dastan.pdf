@@ -1,8 +1,8 @@
 <h1 align="center"> elaheh-dastan.pdf </h1>
 
 <p align="center">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/elahe-dastan/elahe-dastan.pdf/latex.yaml?logo=github&style=for-the-badge">
-  <img alt="Me" src="https://img.shields.io/badge/me-elahe-orange?style=for-the-badge">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/elaheh-dastan/elaheh-dastan.pdf/latex.yaml?logo=github&style=for-the-badge">
+  <img alt="Me" src="https://img.shields.io/badge/me-elaheh-orange?style=for-the-badge">
 </p>
 
 ## Introduction
@@ -38,7 +38,7 @@ Each paragraph in the each following section can be used standalone.
 I ranked below 400 in the math and physics university entrance exam in Iran, with over 1 million participants.
 My team and I successfully published a paper, available at https://arxiv.org/abs/2309.09830.
 My team and I participated in a Hackathon, where we performed sentiment analysis on tweets about the company,
-securing the third position among 30 teams. You can find our project at https://github.com/elahe-dastan/Fallgoosh.
+securing the third position among 30 teams. You can find our project at https://github.com/elaheh-dastan/Fallgoosh.
 
 ### Technical Achievements
 

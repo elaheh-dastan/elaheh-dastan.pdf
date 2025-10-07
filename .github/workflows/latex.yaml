@@ -20,6 +20,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
-          files: build/elahe/elahe.pdf
+          files: build/elaheh/elaheh.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
