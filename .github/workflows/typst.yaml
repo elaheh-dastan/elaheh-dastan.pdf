@@ -12,6 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: typst-community/setup-typst@v4
+      - name: prepare build directory
+        run: mkdir -p build
       - name: compile Istanbul profile
         run: >-
           typst compile --font-path fonts --input profile=istanbul
