@@ -1,7 +1,7 @@
 <h1 align="center"> elaheh-dastan.pdf </h1>
 
 <p align="center">
-  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/elaheh-dastan/elaheh-dastan.pdf/latex.yaml?logo=github&style=for-the-badge">
+  <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/elaheh-dastan/elaheh-dastan.pdf/typst.yaml?logo=github&style=for-the-badge">
   <img alt="Me" src="https://img.shields.io/badge/me-elaheh-orange?style=for-the-badge">
 </p>
 
@@ -16,10 +16,26 @@ Each release has build date as its name.
 
 ## Build Yourself
 
-Make the resume using [Tectonic](https://tectonic-typesetting.github.io/book/latest/index.html)!
+Made with [Typst](https://typst.app/) using the
+[modern-cv](https://typst.app/universe/package/modern-cv/) template. The bundled
+fonts under `fonts/` (Source Sans 3 & Roboto) are passed via `--font-path` so the
+output renders identically everywhere.
+
+There are two profiles that differ only in the header location, selected with
+`--input profile=<istanbul|tehran>`:
 
 ```sh
-tectonic -X build
+# Istanbul profile
+typst compile --font-path fonts --input profile=istanbul src/resume.typ build/elaheh-ml-istanbul.pdf
+
+# Tehran profile
+typst compile --font-path fonts --input profile=tehran   src/resume.typ build/elaheh-ml-tehran.pdf
+```
+
+For live preview while editing:
+
+```sh
+typst watch --font-path fonts --input profile=istanbul src/resume.typ build/elaheh-ml-istanbul.pdf
 ```
 
 ## Acknowledgement
