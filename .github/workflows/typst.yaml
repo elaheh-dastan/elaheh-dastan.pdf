@@ -1,0 +1,31 @@
+---
+name: typst
+on:
+  push:
+    paths:
+      - .github/workflows/typst.yaml
+      - '**.typ'
+      - fonts/**
+jobs:
+  build_typst:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: typst-community/setup-typst@v4
+      - name: compile Istanbul profile
+        run: >-
+          typst compile --font-path fonts --input profile=istanbul
+          src/resume.typ build/elaheh-ml-istanbul.pdf
+      - name: compile Tehran profile
+        run: >-
+          typst compile --font-path fonts --input profile=tehran
+          src/resume.typ build/elaheh-ml-tehran.pdf
+      - name: release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: |
+            build/elaheh-ml-istanbul.pdf
+            build/elaheh-ml-tehran.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
