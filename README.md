@@ -17,25 +17,24 @@ Each release has build date as its name.
 ## Build Yourself
 
 Made with [Typst](https://typst.app/) using the
-[modern-cv](https://typst.app/universe/package/modern-cv/) template. The bundled
-fonts under `fonts/` (Source Sans 3 & Roboto) are passed via `--font-path` so the
-output renders identically everywhere.
+[brilliant-cv](https://typst.app/universe/package/brilliant-cv/) template. The
+bundled fonts under `fonts/` (Source Sans 3 & Roboto) are passed via
+`--font-path` so the output renders identically everywhere. FontAwesome must be
+installed system-wide for the contact icons.
 
-There are two profiles that differ only in the header location, selected with
-`--input profile=<istanbul|tehran>`:
+There are two profiles that differ only in the contact block (phone and
+location), selected with `--input profile=<spain|iran>`:
 
 ```sh
-# Istanbul profile
-typst compile --font-path fonts --input profile=istanbul src/resume.typ build/elaheh-ml-istanbul.pdf
-
-# Tehran profile
-typst compile --font-path fonts --input profile=tehran   src/resume.typ build/elaheh-ml-tehran.pdf
+just build    # both variants into build/
+just spain    # build/elaheh-spain.pdf
+just iran     # build/elaheh-iran.pdf
 ```
 
 For live preview while editing:
 
 ```sh
-typst watch --font-path fonts --input profile=istanbul src/resume.typ build/elaheh-ml-istanbul.pdf
+just watch spain
 ```
 
 ## Acknowledgement
