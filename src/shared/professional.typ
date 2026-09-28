@@ -13,7 +13,10 @@
 // and no measured business outcome has landed yet. Do not add invented numbers
 // here for symmetry with the entries below.
 #cv-entry(
-  title: [Machine Learning Engineer],
+  // The remote label rides on the title line, not in `location`: the location
+  // column is only date_width wide, so "Barcelona, Spain (Remote)" wraps and
+  // pushes the date onto a third line.
+  title: [Machine Learning Engineer · Remote],
   society: [Caterpillar --- via COMTEK International],
   date: [May 2026 -- Present],
   location: [Barcelona, Spain],
