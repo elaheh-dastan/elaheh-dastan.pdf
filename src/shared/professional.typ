@@ -5,13 +5,13 @@
 #cv-section("Professional Experience")
 
 // The contracting arrangement is stated on the employer line rather than hidden:
-// COMTEK International is the employer of record (spelled as on LinkedIn),
-// Caterpillar is where the work
-// happens. Caterpillar leads because that is the name a reviewer recognises, and
-// omitting COMTEK would misstate who pays her. The bullets are deliberately free
-// of percentage lifts: this role is six months old and no measured business
-// outcome has landed yet. Do not add invented numbers here for symmetry with
-// the entries below.
+// COMTEK International is the employer of record (spelled as on LinkedIn) and
+// Caterpillar is where the work happens. Caterpillar leads because that is the
+// name a reviewer recognises, and omitting COMTEK would misstate who pays her.
+//
+// The bullets are deliberately free of percentage lifts: the role is months old
+// and no measured business outcome has landed yet. Do not add invented numbers
+// here for symmetry with the entries below.
 #cv-entry(
   title: [Machine Learning Engineer],
   society: [Caterpillar --- via COMTEK International],
@@ -98,6 +98,22 @@
     [Mentored over 5 new joiners and launched a structured mentorship program and a new interview pipeline.],
   ),
   tags: ("Vector Search", "OCR", "ONNX", "SVM", "Mentoring"),
+)
+
+// Five months between Nahal and Snapp!, and the only non-ML role on the resume.
+// It is here because it is on LinkedIn and a reviewer comparing the two
+// documents would otherwise see an unexplained difference. No descriptor: unlike
+// the other Iranian employers, nothing in the sources establishes what Dotin is,
+// and guessing would break the rule that every claim here is backed.
+#cv-entry(
+  title: [Software Engineer],
+  society: [Dotin],
+  date: [Apr 2020 -- Aug 2020],
+  location: [Tehran, Iran],
+  description: list(
+    [Designed *transactional databases* for critical financial operations, tuning them for query-processing efficiency and reliability.],
+  ),
+  tags: ("Transactional Databases", "Query Optimization", "Fintech"),
 )
 
 #cv-entry(

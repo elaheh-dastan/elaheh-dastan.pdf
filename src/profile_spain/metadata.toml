@@ -11,8 +11,8 @@ letter_footer = "Cover letter"
 [layout]
     awesome_color = "#262F99"
     before_section_skip = "6pt"
-    before_entry_skip = "4pt"
-    before_entry_description_skip = "3pt"
+    before_entry_skip = "3pt"
+    before_entry_description_skip = "2pt"
     paper_size = "a4"
     date_width = "3.4cm"
 

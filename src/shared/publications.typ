@@ -14,7 +14,7 @@
   date: [2023],
   location: [arXiv preprint],
   description: list(
-    [Co-authored a study clustering urban traffic patterns with *K-Means* and *Dynamic Time Warping*, applied to real traffic-sensor data from an urban road network.],
+    [Co-authored a study clustering urban traffic patterns with *K-Means* and *Dynamic Time Warping*.],
     [#link("https://arxiv.org/abs/2309.09830")[arxiv.org/abs/2309.09830]],
   ),
 )

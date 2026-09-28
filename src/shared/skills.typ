@@ -42,7 +42,6 @@
     #cv-skill-tag([Langfuse])
     #cv-skill-tag([RAG])
     #cv-skill-tag([LLM-as-Judge])
-    #cv-skill-tag([FlagEmbedding])
   ],
 )
 

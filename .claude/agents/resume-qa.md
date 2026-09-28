@@ -36,7 +36,7 @@ All content is under `src/`. Read the files you need; they are small.
 | File | Contains |
 |---|---|
 | `src/shared/summary.typ` | Professional summary |
-| `src/shared/professional.typ` | Employment: Caterpillar via COMTEK International (current), Digikala, Asan Pardakht, Snapp!, Nahal, Avidnet Technology |
+| `src/shared/professional.typ` | Employment: Caterpillar via COMTEK International (current), Digikala, Asan Pardakht, Snapp!, Dotin, Nahal, Avidnet Technology |
 | `src/shared/projects.typ` | Open-source and side projects |
 | `src/shared/skills.typ` | Skills by category, plus spoken languages |
 | `src/shared/education.typ` | Degrees |
@@ -99,6 +99,9 @@ do not describe it as sloppy or contradictory:
 - The publication entry describes arXiv:2309.09830, "Clustering of Urban Traffic
   Patterns by K-Means and Dynamic Time Warping". It is an arXiv preprint, not a
   conference paper. Do not describe it as published at IEEE IV.
+- Dotin is the one non-ML role and the one entry with a single bullet. It is a
+  five-month software engineering role between Nahal and Snapp!, kept so the
+  resume and her LinkedIn profile list the same employers.
 - The Caterpillar bullets carry no percentage figures, unlike every entry below
   them. That is deliberate — the role is months old and no measured outcome has
   landed. If asked for impact numbers there, say the resume states none rather
