@@ -9,7 +9,7 @@ cv_footer = "Curriculum vitae"
 letter_footer = "Cover letter"
 
 [layout]
-    awesome_color = "#262F99"
+    awesome_color = "#1F3A5C"
     before_section_skip = "6pt"
     before_entry_skip = "3pt"
     before_entry_description_skip = "2pt"
@@ -20,7 +20,9 @@ letter_footer = "Cover letter"
         # Source Sans 3 and Roboto are vendored under fonts/ (passed via
         # --font-path), so they resolve identically everywhere.
         regular_fonts = ["Source Sans 3", "Libertinus Serif"]
-        header_font = "Roboto"
+        # One typeface throughout. Roboto was only used for the name and the
+        # section headings, and the mix read as decorative rather than deliberate.
+        header_font = "Source Sans 3"
 
     [layout.header]
         header_align = "left"
@@ -34,8 +36,10 @@ letter_footer = "Cover letter"
         display_logo = false
 
     [layout.section]
-        title_highlight = "first-letters"
-        title_highlight_letters = 3
+        # "none": section titles render in a single colour. The first-letters
+        # treatment tinted the first three characters of every heading, which is
+        # the most decorative thing on the page.
+        title_highlight = "none"
 
     [layout.footer]
         display_page_counter = true
