@@ -78,10 +78,14 @@ state the same information publicly and must agree:
 |---|---|
 | `elaheh-dastan.pdf` (here) | Full resume — authoritative |
 | `elaheh-dastan.github.io` | `src/pages/index.astro`, `experience.astro`, `projects.astro`, `education.astro` |
+| `elaheh-dastan` | `README.md` — the GitHub **profile** README, rendered on github.com/elaheh-dastan |
 
-When you change any of the following here, **update the site in the same
+When you change any of the following here, **update the other two in the same
 session**: job titles, employer names, start/end dates, part-time or remote
-labels, the headline/summary, location, or education. A recruiter reading the
+labels, the headline/summary, location, or education. The profile README only
+carries the current role, the years of experience, the employer list and the
+publication, so most edits here do not touch it — but those four do, and it was
+left stating a superseded employer and a wrong paper for exactly that reason. A recruiter reading the
 resume and the site side by side will notice a contradiction, and a stale
 "Present" on a past employer is the most damaging kind.
 
