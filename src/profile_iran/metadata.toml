@@ -3,7 +3,7 @@
 # Iran profile — content lives under shared/, only the contact block differs
 # between profiles. Switch via: typst compile cv.typ --input profile=iran
 
-header_quote = "Senior Machine Learning Engineer · 7+ years building ML systems and data pipelines"
+header_quote = "Senior Machine Learning Engineer · 9+ years building ML systems and data pipelines"
 
 cv_footer = "Curriculum vitae"
 letter_footer = "Cover letter"

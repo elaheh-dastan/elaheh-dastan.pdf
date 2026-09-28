@@ -2,7 +2,7 @@
 
 #cv-section("Summary")
 
-Senior ML Engineer with 7+ years of experience designing and deploying scalable
+Senior ML Engineer with 9+ years of experience designing and deploying scalable
 machine learning systems and data pipelines. Expert in building end-to-end
 solutions from data collection and ETL to model training and production
 deployment. Proven track record of delivering data-driven products with

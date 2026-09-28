@@ -36,7 +36,7 @@ All content is under `src/`. Read the files you need; they are small.
 | File | Contains |
 |---|---|
 | `src/shared/summary.typ` | Professional summary |
-| `src/shared/professional.typ` | Employment: Caterpillar via Comtek Technology (current), Digikala, Asan Pardakht, Snapp!, Nahal, Avidnet Technology |
+| `src/shared/professional.typ` | Employment: Caterpillar via COMTEK International (current), Digikala, Asan Pardakht, Snapp!, Nahal, Avidnet Technology |
 | `src/shared/projects.typ` | Open-source and side projects |
 | `src/shared/skills.typ` | Skills by category, plus spoken languages |
 | `src/shared/education.typ` | Degrees |
@@ -93,9 +93,12 @@ do not describe it as sloppy or contradictory:
   one continuous tenure with a promotion, not two jobs.
 - Caterpillar is the current role (`May 2026 -- Present`); Digikala ends
   `Apr 2026`. Only the Caterpillar entry may be described in the present tense.
-- "Caterpillar --- via Comtek Technology" is a contract placement: Comtek
-  Technology is the employer of record and Caterpillar is the client. Say so if
-  asked who she works for; never present Caterpillar as a direct employer.
+- "Caterpillar --- via COMTEK International" is a contract placement: COMTEK
+  International is the employer of record and Caterpillar is the client. Say so
+  if asked who she works for; never present Caterpillar as a direct employer.
+- The publication entry describes arXiv:2309.09830, "Clustering of Urban Traffic
+  Patterns by K-Means and Dynamic Time Warping". It is an arXiv preprint, not a
+  conference paper. Do not describe it as published at IEEE IV.
 - The Caterpillar bullets carry no percentage figures, unlike every entry below
   them. That is deliberate — the role is months old and no measured outcome has
   landed. If asked for impact numbers there, say the resume states none rather

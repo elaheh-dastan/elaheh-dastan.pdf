@@ -5,19 +5,20 @@
 #cv-section("Professional Experience")
 
 // The contracting arrangement is stated on the employer line rather than hidden:
-// Comtek Technology is the employer of record, Caterpillar is where the work
+// COMTEK International is the employer of record (spelled as on LinkedIn),
+// Caterpillar is where the work
 // happens. Caterpillar leads because that is the name a reviewer recognises, and
-// omitting Comtek would misstate who pays her. The bullets are deliberately free
+// omitting COMTEK would misstate who pays her. The bullets are deliberately free
 // of percentage lifts: this role is six months old and no measured business
 // outcome has landed yet. Do not add invented numbers here for symmetry with
 // the entries below.
 #cv-entry(
   title: [Machine Learning Engineer],
-  society: [Caterpillar --- via Comtek Technology],
+  society: [Caterpillar --- via COMTEK International],
   date: [May 2026 -- Present],
   location: [Barcelona, Spain],
   description: list(
-    [Built and own *Pampas*, the *LLM evaluation framework* for the *Cat In-Cab Assistant*, covering the judging methodology, the test corpus, and the release pipeline that gates every change to the assistant.],
+    [Built and own *Pampas*, the *LLM evaluation framework* that assesses AI assistant outputs across *cloud and in-cab* environments for the *Cat In-Cab Assistant*, covering the judging methodology, the test corpus, and the release pipeline that gates every change.],
     [Designed the judging methodology --- binary Accept/Reject rubrics, a generic *RAG* metric evaluator, a deterministic tool-calling evaluator, and a parts-search judge for *SIS2* driven from declarative `scenario.yaml` files.],
     [Built *judge-the-judge* meta-evaluation reporting variance and cross-judge agreement, so a rubric or prompt change is measured before it is trusted rather than assumed to be an improvement.],
     [Moved test data and configuration to code: migrated dataset items from JSON to *YAML* behind a conversion CLI with normalization, *Pydantic* dataset validation, and scenario-schema to prompt-template wiring.],
