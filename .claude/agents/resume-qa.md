@@ -36,7 +36,7 @@ All content is under `src/`. Read the files you need; they are small.
 | File | Contains |
 |---|---|
 | `src/shared/summary.typ` | Professional summary |
-| `src/shared/professional.typ` | Employment: Digikala, Asan Pardakht, Snapp!, Nahal, Avidnet Technology |
+| `src/shared/professional.typ` | Employment: Caterpillar via Comtek Technology (current), Digikala, Asan Pardakht, Snapp!, Nahal, Avidnet Technology |
 | `src/shared/projects.typ` | Open-source and side projects |
 | `src/shared/skills.typ` | Skills by category, plus spoken languages |
 | `src/shared/education.typ` | Degrees |
@@ -91,8 +91,15 @@ do not describe it as sloppy or contradictory:
   exist because a European reader cannot size up these companies.
 - The two Snapp! roles are grouped under one employer heading on purpose; that is
   one continuous tenure with a promotion, not two jobs.
-- Digikala ends `Apr 2026` rather than `Present`. If a question assumes a current
-  employer, note that the resume shows none.
+- Caterpillar is the current role (`May 2026 -- Present`); Digikala ends
+  `Apr 2026`. Only the Caterpillar entry may be described in the present tense.
+- "Caterpillar --- via Comtek Technology" is a contract placement: Comtek
+  Technology is the employer of record and Caterpillar is the client. Say so if
+  asked who she works for; never present Caterpillar as a direct employer.
+- The Caterpillar bullets carry no percentage figures, unlike every entry below
+  them. That is deliberate — the role is months old and no measured outcome has
+  landed. If asked for impact numbers there, say the resume states none rather
+  than reaching for a figure from another employer.
 
 ## Answering
 
