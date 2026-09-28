@@ -36,7 +36,7 @@ All content is under `src/`. Read the files you need; they are small.
 | File | Contains |
 |---|---|
 | `src/shared/summary.typ` | Professional summary |
-| `src/shared/professional.typ` | Employment: Caterpillar via COMTEK International (current), Digikala, Asan Pardakht, Snapp!, Dotin, Nahal, Avidnet Technology |
+| `src/shared/professional.typ` | Employment: Caterpillar via COMTEK International (current), Digikala, Asan Pardakht, Snapp!, Dotin, Nahal, Avidnet Technologies |
 | `src/shared/projects.typ` | Open-source and side projects |
 | `src/shared/skills.typ` | Skills by category, plus spoken languages |
 | `src/shared/education.typ` | Degrees |

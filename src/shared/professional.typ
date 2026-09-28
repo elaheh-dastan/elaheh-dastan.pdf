@@ -135,8 +135,8 @@
 )
 
 #cv-entry(
-  title: [Software Engineer, AI/ML],
-  society: [Avidnet Technology],
+  title: [Machine Learning Engineer],
+  society: [Avidnet Technologies],
   date: [2017 -- 2018],
   location: [Tehran, Iran],
   description: list(
