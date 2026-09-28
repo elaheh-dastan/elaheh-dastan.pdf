@@ -92,7 +92,7 @@ do not describe it as sloppy or contradictory:
 - The two Snapp! roles are grouped under one employer heading on purpose; that is
   one continuous tenure with a promotion, not two jobs.
 - Caterpillar is the current role (`May 2026 -- Present`); Digikala ends
-  `Apr 2026`. Only the Caterpillar entry may be described in the present tense.
+  `May 2026`. Only the Caterpillar entry may be described in the present tense.
 - "Caterpillar --- via COMTEK International" is a contract placement: COMTEK
   International is the employer of record and Caterpillar is the client. Say so
   if asked who she works for; never present Caterpillar as a direct employer.

@@ -35,7 +35,7 @@
 #cv-entry(
   title: [Senior Data Scientist],
   society: [Digikala --- Iran's largest e-commerce marketplace],
-  date: [Jul 2024 -- Apr 2026],
+  date: [Sep 2024 -- May 2026],
   location: [Tehran, Iran],
   description: list(
     [Built an *image-to-product retrieval system* with a *dual-encoder model* combining *CLIP*-based visual embeddings and textual product representations, reaching 92% top-10 accuracy and enabling visual search from uploaded or shared images.],
@@ -55,7 +55,7 @@
 #cv-entry(
   title: [Machine Learning Consultant],
   society: [Asan Pardakht --- Iranian payment services provider],
-  date: [Feb 2024 -- Jul 2024],
+  date: [Jul 2024 -- Sep 2024],
   location: [Tehran, Iran],
   description: list(
     [Built *LSTM* and *Prophet* price-forecasting models achieving 12--18% MAPE across major coins such as BTC and ETH.],
