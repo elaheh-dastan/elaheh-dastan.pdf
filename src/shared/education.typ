@@ -18,7 +18,7 @@
 )
 
 #cv-entry-continued(
-  title: [B.Sc. in Software Engineering],
+  title: [B.Sc. in Computer Engineering],
   date: [2017 -- 2022],
   description: list(
     [*Relevant coursework*: Machine Learning, Data Structures, Algorithms, Database Systems, Statistics.],
