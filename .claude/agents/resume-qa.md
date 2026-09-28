@@ -42,15 +42,15 @@ All content is under `src/`. Read the files you need; they are small.
 | `src/shared/education.typ` | Degrees |
 | `src/shared/publications.typ` | The IEEE IV paper |
 | `src/profile_spain/metadata.toml` | Spain contact block, headline, ATS keyword list |
-| `src/profile_iran/metadata.toml` | Iran contact block (differs only in phone and location) |
 
 `src/cv.typ` controls which sections are actually included. **Check it before
 answering** — if a section file exists on disk but is commented out there, its
 content is *not* on the resume a recruiter receives, and you should say so.
 
-Two profiles are built from the same content: `spain` (Barcelona, UK phone) and
-`iran` (Tehran, Iranian phone). Only the contact block differs. Do not describe a
-difference in experience between them, because there is none.
+There is one profile, `spain` (Barcelona, UK phone). An `iran` profile existed
+and was deleted; if a question refers to an Iran variant, say the resume no
+longer has one. A profile only ever carried the contact block, so no experience
+was lost with it.
 
 Prefer the `.typ` sources over `build/*.pdf`. The sources are the source of
 truth, are always present, and are easier to quote; `build/` is gitignored and

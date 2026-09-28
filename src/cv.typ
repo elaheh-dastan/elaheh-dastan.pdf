@@ -1,15 +1,15 @@
 // Resume entry point. A profile MUST be selected explicitly at compile time:
 //   typst compile src/cv.typ build/elaheh-spain.pdf --input profile=spain
-//   typst compile src/cv.typ build/elaheh-iran.pdf  --input profile=iran
-// Profiles only differ in the contact block (phone + location); section
-// content lives under shared/.
+// A profile is only the contact block (phone + location); section content lives
+// under shared/. `spain` is the only profile — the `iran` one was removed — but
+// the indirection is kept so a second region can be added back as one file.
 
 #import "@preview/brilliant-cv:4.0.1": cv
 
 #let profile = if "profile" in sys.inputs {
   sys.inputs.profile
 } else {
-  panic("no profile selected — pass --input profile=spain or profile=iran")
+  panic("no profile selected — pass --input profile=spain")
 }
 #let metadata = toml("profile_" + profile + "/metadata.toml")
 

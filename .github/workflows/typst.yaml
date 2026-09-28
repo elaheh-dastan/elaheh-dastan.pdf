@@ -41,8 +41,6 @@ jobs:
         run: mkdir -p build
       - name: compile resume (spain)
         run: typst compile src/cv.typ build/elaheh-spain.pdf --input profile=spain --font-path fonts
-      - name: compile resume (iran)
-        run: typst compile src/cv.typ build/elaheh-iran.pdf --input profile=iran --font-path fonts
       # elaheh-dastan.github.io links to the release asset literally named
       # elaheh.pdf, so publish the default (spain) variant under that stable
       # name too. Dropping it silently 404s the "Here is my CV" button.
@@ -55,6 +53,5 @@ jobs:
           files: |
             build/elaheh.pdf
             build/elaheh-spain.pdf
-            build/elaheh-iran.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -22,13 +22,12 @@ bundled fonts under `fonts/` (Source Sans 3 & Roboto) are passed via
 `--font-path` so the output renders identically everywhere. FontAwesome must be
 installed system-wide for the contact icons.
 
-There are two profiles that differ only in the contact block (phone and
-location), selected with `--input profile=<spain|iran>`:
+A profile supplies the contact block (phone and location) and must be selected
+explicitly with `--input profile=spain`; `spain` is currently the only one:
 
 ```sh
-just build    # both variants into build/
-just spain    # build/elaheh-spain.pdf
-just iran     # build/elaheh-iran.pdf
+just build    # build/elaheh-spain.pdf
+just spain    # the same thing, named explicitly
 ```
 
 For live preview while editing:

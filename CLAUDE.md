@@ -7,14 +7,15 @@ package. Migrated from `modern-cv`; anything describing `src/resume.typ` or
 ## Build
 
 ```sh
-just build          # both variants into build/
-just spain          # build/elaheh-spain.pdf
-just iran           # build/elaheh-iran.pdf
+just build          # build/elaheh-spain.pdf
+just spain          # the same thing, named explicitly
 just watch spain    # live rebuild
 ```
 
-A profile **must** be passed explicitly (`--input profile=spain|iran`); there is
-no default and `src/cv.typ` panics without one. Source Sans 3 and Roboto are
+A profile **must** be passed explicitly (`--input profile=spain`); there is no
+default and `src/cv.typ` panics without one. `spain` is the only profile — the
+`iran` one was deleted — but the indirection is kept, so adding a region back
+means adding one `metadata.toml` and nothing else. Source Sans 3 and Roboto are
 vendored under `fonts/` and passed via `--font-path fonts`; FontAwesome must be
 installed system-wide, or passed as a second `--font-path`. Without it the
 contact icons render as tofu and typst warns about `font awesome 7 free`.
@@ -22,9 +23,9 @@ contact icons render as tofu and typst warns about `font awesome 7 free`.
 ## Layout
 
 - `src/cv.typ` — entry point; selects a profile and includes the shared sections.
-- `src/profile_<region>/metadata.toml` — **the only** per-region difference: the
-  contact block. Everything else is shared, so the variants cannot drift.
-- `src/shared/*.typ` — all section content. Editing these changes every variant.
+- `src/profile_<region>/metadata.toml` — the contact block, and **the only**
+  thing a profile may hold. Everything else is shared, so regions cannot drift.
+- `src/shared/*.typ` — all section content, shared by every profile.
 
 `cv.typ` wraps the entry-based sections in `keep-header-with-body`, a show rule
 that marks brilliant-cv's header tables `sticky` so an entry cannot strand its
