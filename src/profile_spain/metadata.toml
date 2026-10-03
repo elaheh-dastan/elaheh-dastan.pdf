@@ -79,3 +79,9 @@ letter_footer = "Cover letter"
         [personal.info.custom-degree]
             awesomeIcon = "graduation-cap"
             text = "M.Sc. in Artificial Intelligence"
+
+        # Non-EU candidates get screened out unless the right to work is
+        # visible up front, so state it in the contact block.
+        [personal.info.custom-visa]
+            awesomeIcon = "id-card"
+            text = "Spanish residency · no visa sponsorship required"

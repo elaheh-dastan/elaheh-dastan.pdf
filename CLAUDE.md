@@ -91,13 +91,14 @@ resume and the site side by side will notice a contradiction, and a stale
 
 ## Open questions
 
-Two things were carried over from the previous resume and are worth confirming
+One thing was carried over from the previous resume and is worth confirming
 rather than assuming:
 
 - The spain profile publishes a **UK phone number** (`+44 7810 170938`) against a
   Barcelona location. That is reachable but reads oddly; a Spanish number would
   be better once one exists.
-- Unlike `1995parham.pdf`, the spain profile states **no work authorization**.
-  Non-EU candidates are routinely screened out unless a visa or right-to-work
-  line is visible up front, so add a `[personal.info.custom-visa]` entry if there
-  is one to state.
+
+The work-authorization gap is closed: `[personal.info.custom-visa]` states
+Spanish residency with no sponsorship required, because non-EU candidates are
+routinely screened out unless that is visible up front. Keep it in the contact
+block.
