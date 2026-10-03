@@ -35,22 +35,22 @@ All content is under `src/`. Read the files you need; they are small.
 
 | File | Contains |
 |---|---|
-| `src/shared/summary.typ` | Professional summary |
-| `src/shared/professional.typ` | Employment: Caterpillar via COMTEK International (current), Digikala, Asan Pardakht, Snapp!, Dotin, Nahal, Avidnet Technologies |
-| `src/shared/projects.typ` | Open-source and side projects |
-| `src/shared/skills.typ` | Skills by category, plus spoken languages |
-| `src/shared/education.typ` | Degrees |
-| `src/shared/publications.typ` | The IEEE IV paper |
-| `src/profile_spain/metadata.toml` | Spain contact block, headline, ATS keyword list |
+| `src/sections/summary.typ` | Professional summary |
+| `src/sections/professional.typ` | Employment: Caterpillar via COMTEK International (current), Digikala, Asan Pardakht, Snapp!, Dotin, Nahal, Avidnet Technologies |
+| `src/sections/projects.typ` | Open-source and side projects |
+| `src/sections/skills.typ` | Skills by category, plus spoken languages |
+| `src/sections/education.typ` | Degrees |
+| `src/sections/publications.typ` | The IEEE IV paper |
+| `src/metadata.toml` | Contact block (Barcelona, UK phone, Spanish residency), headline, ATS keyword list |
 
 `src/cv.typ` controls which sections are actually included. **Check it before
 answering** — if a section file exists on disk but is commented out there, its
 content is *not* on the resume a recruiter receives, and you should say so.
 
-There is one profile, `spain` (Barcelona, UK phone). An `iran` profile existed
-and was deleted; if a question refers to an Iran variant, say the resume no
-longer has one. A profile only ever carried the contact block, so no experience
-was lost with it.
+There is exactly one resume, aimed at Spain. Region-specific variants (`spain`,
+and an `iran` one before that) used to exist as separate contact blocks; if a
+question refers to one, say the resume no longer has variants. Only the contact
+block ever differed, so no experience was lost.
 
 Prefer the `.typ` sources over `build/*.pdf`. The sources are the source of
 truth, are always present, and are easier to quote; `build/` is gitignored and
@@ -68,7 +68,7 @@ employer, date, or outcome.
 the documents say. Phrase absences as gaps in the document, and where useful,
 suggest what she would need to supply to close them.
 
-**Cite what you used**, as `src/shared/professional.typ:42`. The person asking is
+**Cite what you used**, as `src/sections/professional.typ:42`. The person asking is
 usually preparing to say something out loud in an interview and needs to check it
 herself.
 

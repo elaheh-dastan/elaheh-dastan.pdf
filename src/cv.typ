@@ -1,17 +1,11 @@
-// Resume entry point. A profile MUST be selected explicitly at compile time:
-//   typst compile src/cv.typ build/elaheh-spain.pdf --input profile=spain
-// A profile is only the contact block (phone + location); section content lives
-// under shared/. `spain` is the only profile — the `iran` one was removed — but
-// the indirection is kept so a second region can be added back as one file.
+// Resume entry point:
+//   typst compile src/cv.typ build/elaheh.pdf --font-path fonts
+// metadata.toml holds the contact block, layout and ATS keywords; the section
+// content lives under sections/.
 
 #import "@preview/brilliant-cv:4.0.1": cv
 
-#let profile = if "profile" in sys.inputs {
-  sys.inputs.profile
-} else {
-  panic("no profile selected — pass --input profile=spain")
-}
-#let metadata = toml("profile_" + profile + "/metadata.toml")
+#let metadata = toml("metadata.toml")
 
 #show: cv.with(metadata)
 
@@ -29,9 +23,9 @@
   body
 }
 
-#include "shared/summary.typ"
-#keep-header-with-body(include "shared/professional.typ")
-#include "shared/skills.typ"
-#keep-header-with-body(include "shared/projects.typ")
-#keep-header-with-body(include "shared/education.typ")
-#keep-header-with-body(include "shared/publications.typ")
+#include "sections/summary.typ"
+#keep-header-with-body(include "sections/professional.typ")
+#include "sections/skills.typ"
+#keep-header-with-body(include "sections/projects.typ")
+#keep-header-with-body(include "sections/education.typ")
+#keep-header-with-body(include "sections/publications.typ")

@@ -2,18 +2,15 @@
 default:
     @just --list
 
-# build the resume
-build: spain
-
-# spain variant → build/elaheh-spain.pdf
-spain:
+# build the resume → build/elaheh.pdf
+build:
     @mkdir -p build
-    typst compile src/cv.typ build/elaheh-spain.pdf --input profile=spain --font-path fonts
+    typst compile src/cv.typ build/elaheh.pdf --font-path fonts
 
-# rebuild a variant on save (profile is required, e.g. `just watch spain`)
-watch profile:
+# rebuild on save
+watch:
     @mkdir -p build
-    typst watch src/cv.typ build/elaheh-{{profile}}.pdf --input profile={{profile}} --font-path fonts
+    typst watch src/cv.typ build/elaheh.pdf --font-path fonts
 
 # remove build artifacts
 clean:

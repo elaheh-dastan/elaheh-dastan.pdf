@@ -3,7 +3,7 @@
 #cv-section("Skills")
 
 // Curated for a human reader, not for keyword matching: the [inject] block in
-// each profile's metadata.toml already feeds an invisible keyword list to ATS
+// metadata.toml already feeds an invisible keyword list to ATS
 // parsers, so this list does not need to be exhaustive. Entries here should be
 // defensible in an interview and, ideally, evidenced by a bullet above.
 //

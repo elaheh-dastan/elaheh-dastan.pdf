@@ -1,7 +1,7 @@
 #:schema https://raw.githubusercontent.com/yunanwg/brilliant-CV/main/metadata.toml.schema.json
 
-# Spain profile — content lives under shared/, only the contact block differs
-# between profiles. Switch via: typst compile cv.typ --input profile=spain
+# Contact block, layout and ATS keyword list. Section content lives under
+# sections/.
 
 header_quote = "Senior Machine Learning Engineer · 9+ years building ML systems and data pipelines"
 
