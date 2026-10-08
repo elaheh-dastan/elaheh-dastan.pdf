@@ -90,14 +90,11 @@ left stating a superseded employer and a wrong paper for exactly that reason. A 
 resume and the site side by side will notice a contradiction, and a stale
 "Present" on a past employer is the most damaging kind.
 
-## Open questions
+## Contact block
 
-One thing was carried over from the previous resume and is worth confirming
-rather than assuming:
-
-- The resume publishes a **UK phone number** (`+44 7810 170938`) against a
-  Barcelona location. That is reachable but reads oddly; a Spanish number would
-  be better once one exists.
+The phone number is a Spanish mobile (`+34`), matching the Barcelona location;
+the old UK number was replaced in October 2026. The website's
+`src/data/profile.ts` carries the same number and must change with it.
 
 The work-authorization gap is closed: `[personal.info.custom-visa]` states
 Spanish residency with no sponsorship required, because non-EU candidates are
