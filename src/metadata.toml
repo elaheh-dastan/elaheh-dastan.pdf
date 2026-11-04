@@ -3,7 +3,7 @@
 # Contact block, layout and ATS keyword list. Section content lives under
 # sections/.
 
-header_quote = "Senior Machine Learning Engineer · 9+ years building ML systems and data pipelines"
+header_quote = "Senior AI / ML Engineer · 9+ years building ML systems and data pipelines"
 
 cv_footer = "Curriculum vitae"
 letter_footer = "Cover letter"

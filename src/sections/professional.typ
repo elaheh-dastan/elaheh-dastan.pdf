@@ -16,7 +16,7 @@
   // The remote label rides on the title line, not in `location`: the location
   // column is only date_width wide, so "Barcelona, Spain (Remote)" wraps and
   // pushes the date onto a third line.
-  title: [Machine Learning Engineer · Remote],
+  title: [AI Engineer · Remote],
   society: [Caterpillar --- via COMTEK International],
   date: [May 2026 -- Present],
   location: [Barcelona, Spain],
