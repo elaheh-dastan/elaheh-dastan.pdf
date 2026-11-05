@@ -45,6 +45,16 @@
   ],
 )
 
+// Evaluated, not trained: the Caterpillar speech bullets back these.
+#cv-skill(
+  type: [Speech],
+  info: [
+    #cv-skill-tag([TTS])
+    #cv-skill-tag([Voice Cloning])
+    #cv-skill-tag([NVIDIA NeMo])
+  ],
+)
+
 #cv-skill(
   type: [Retrieval],
   info: [

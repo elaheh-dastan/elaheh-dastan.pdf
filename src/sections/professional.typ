@@ -26,9 +26,18 @@
     [Built *judge-the-judge* meta-evaluation reporting variance and cross-judge agreement, so a rubric or prompt change is measured before it is trusted rather than assumed to be an improvement.],
     [Moved test data and configuration to code: migrated dataset items from JSON to *YAML* behind a conversion CLI with normalization, *Pydantic* dataset validation, and scenario-schema to prompt-template wiring.],
     [Engineered the evaluation *CI/CD*: burn-in workflows, *Bayesian* two-branch comparison, chunked parallel matrices with result merging and PR-comment reporting, *AWS Lambda* deploy and version resolution, and *JFrog Artifactory* publishing.],
-    [Extracted the framework into a shared `p-evaluation-framework` library with typed `AgentScenario` / `TypedDict` contracts, plus *LangGraph* todo middleware, reasoning-level *Langfuse* tagging, and per-run timing reports.],
+    [Extracted the framework into a shared `p-evaluation-framework` library with typed scenario contracts, *LangGraph* middleware, *Langfuse* tagging, and per-run timing reports.],
+    // Speech workstream, added 2026-11-05 from Parham's description: Elaheh is
+    // evaluating TTS and voice-cloning models under the Caterpillar--NVIDIA
+    // partnership. Parham asked for the model names to be left out (2026-11-05). The in-cab context (operators
+    // talk to the assistant by voice, speech is processed on-board rather than
+    // in the cloud) is public: Cat AI Assistant, CES 2026. The evaluation
+    // criteria in the second bullet are the standard TTS metrics, not a figure
+    // she reported; drop any she does not actually measure.
+    [Extended the evaluation work from text to *speech*: benchmarking *text-to-speech* and *voice-cloning* models, including *NVIDIA* ones under Caterpillar's NVIDIA partnership, as candidate voices for the in-cab assistant.],
+    [Scoring candidate voices on intelligibility (*WER*), *speaker similarity* to the reference voice, perceptual quality (*MOS*), and synthesis latency, since in-cab speech runs on-board the machine rather than in the cloud.],
   ),
-  tags: ("Python", "LLM Evaluation", "LLM-as-Judge", "LangGraph", "Langfuse", "AWS Lambda", "CI/CD"),
+  tags: ("Python", "LLM Evaluation", "LLM-as-Judge", "TTS", "Voice Cloning", "LangGraph", "Langfuse", "CI/CD"),
 )
 
 // Descriptors exist because Digikala, Asan Pardakht, Snapp! and Nahal mean
@@ -43,10 +52,10 @@
   description: list(
     [Built an *image-to-product retrieval system* with a *dual-encoder model* combining *CLIP*-based visual embeddings and textual product representations, reaching 92% top-10 accuracy and enabling visual search from uploaded or shared images.],
     [Trained a *Query Understanding* model on user query logs and click data to infer intent and reformulate low-confidence queries, reducing zero-click searches by 4%.],
-    [Improved search relevance through multi-metric fine-tuning and category-consistent retrieval using Category Loss and GMV-weighted balancing, lifting conversion rate by 4%.],
+    [Improved search relevance through multi-metric fine-tuning and category-consistent retrieval, lifting conversion rate by 4%.],
     [Designed and ran *A/B experiments* comparing semantic (business-aware) and *Elasticsearch* pipelines across top queries to route each query to the best engine, increasing add-to-cart by 3%.],
-    [Built scalable user segmentation using embedding-based, feature-driven, and clustering techniques; raised conversion rate by 3% through iterative class refinement and premium-user targeting.],
-    [Accelerated semantic embedding model fine-tuning by 30% via contrastive learning with the *FlagEmbedding* framework, achieving faster convergence and improved embedding consistency.],
+    [Built user segmentation with embedding-based, feature-driven, and clustering techniques, raising conversion rate by 3%.],
+    [Accelerated semantic embedding model fine-tuning by 30% via contrastive learning with the *FlagEmbedding* framework.],
     [Led the *Exact Match* project for precise product-code recognition via tokenizer modifications, custom masking, and a *Redis*-based code index, reducing seller complaints by 20%.],
     [Extended image search to *video* input with an *FFmpeg* transcoding and keyframe extraction pipeline plus scene detection, enabling product discovery from social-media clips and improving retrieval relevance by 15%.],
     [Built an *agentic LLM* quality-control system with *Pydantic AI* and *LangChain* that reviews support agents' answers using an *LLM-as-judge* harness, then evolved it into agentic ticket resolution with *Langfuse* tracing every agent run.],
@@ -63,7 +72,7 @@
   description: list(
     [Built *LSTM* and *Prophet* price-forecasting models achieving 12--18% MAPE across major coins such as BTC and ETH.],
     [Developed a recommendation system with *LightGBM* and behavioral *KMeans* user clustering, increasing simulated ROI by 9.3%.],
-    [Designed portfolio optimization combining *Modern Portfolio Theory* and *Deep Q-Learning* to maximize Sharpe ratio across 20+ cryptocurrencies.],
+    [Designed portfolio optimization combining *Modern Portfolio Theory* and *Deep Q-Learning* to maximize Sharpe ratio across 20+ coins.],
     [Integrated *Monte Carlo* simulations for profit expectation across market scenarios; delivered a prototype that outperformed an equal-weighted baseline by 15% in backtesting.],
   ),
   tags: ("LightGBM", "Prophet", "Time Series", "Deep RL", "Backtesting"),
